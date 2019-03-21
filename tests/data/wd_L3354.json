@@ -1,0 +1,164 @@
+{
+    "pageid": 55162610,
+    "ns": 146,
+    "title": "Lexeme:L3354",
+    "lastrevid": 780071937,
+    "modified": "2018-11-02T14:10:14Z",
+    "type": "lexeme",
+    "id": "L3354",
+    "lemmas": {
+        "en": {
+            "language": "en",
+            "value": "bank"
+        }
+    },
+    "lexicalCategory": "Q1084",
+    "language": "Q1860",
+    "claims": [],
+    "forms": [
+        {
+            "id": "L3354-F1",
+            "representations": {
+                "en": {
+                    "language": "en",
+                    "value": "bank"
+                }
+            },
+            "grammaticalFeatures": [
+                "Q110786"
+            ],
+            "claims": []
+        },
+        {
+            "id": "L3354-F2",
+            "representations": {
+                "en": {
+                    "language": "en",
+                    "value": "banks"
+                }
+            },
+            "grammaticalFeatures": [
+                "Q146786"
+            ],
+            "claims": []
+        }
+    ],
+    "senses": [
+        {
+            "id": "L3354-S1",
+            "glosses": {
+                "de": {
+                    "language": "de",
+                    "value": "Geldinstitut f\u00fcr Finanzdienstleistungen"
+                },
+                "en": {
+                    "language": "en",
+                    "value": "financial institution"
+                },
+                "ca": {
+                    "language": "ca",
+                    "value": "instituci\u00f3 financera"
+                },
+                "fr": {
+                    "language": "fr",
+                    "value": "institution financi\u00e8re"
+                }
+            },
+            "claims": {
+                "P5137": [
+                    {
+                        "mainsnak": {
+                            "snaktype": "value",
+                            "property": "P5137",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 22687,
+                                    "id": "Q22687"
+                                },
+                                "type": "wikibase-entityid"
+                            }
+                        },
+                        "type": "statement",
+                        "id": "L3354-S1$79e6e103-44ac-67ae-faa6-79d83aaec0a9",
+                        "rank": "normal"
+                    }
+                ],
+                "P5972": [
+                    {
+                        "mainsnak": {
+                            "snaktype": "value",
+                            "property": "P5972",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "sense",
+                                    "id": "L34791-S1"
+                                },
+                                "type": "wikibase-entityid"
+                            }
+                        },
+                        "type": "statement",
+                        "id": "L3354-S1$0436d51b-4f14-c5de-4725-751a0123926b",
+                        "rank": "normal"
+                    },
+                    {
+                        "mainsnak": {
+                            "snaktype": "value",
+                            "property": "P5972",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "sense",
+                                    "id": "L15448-S1"
+                                },
+                                "type": "wikibase-entityid"
+                            }
+                        },
+                        "type": "statement",
+                        "id": "L3354-S1$1b9e3571-43cb-1aae-68e5-f1471861750d",
+                        "rank": "normal"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "L3354-S2",
+            "glosses": {
+                "en": {
+                    "language": "en",
+                    "value": "dry ground next to a river"
+                }
+            },
+            "claims": []
+        },
+        {
+            "id": "L3354-S3",
+            "glosses": {
+                "en": {
+                    "language": "en",
+                    "value": "shallow ocean area"
+                }
+            },
+            "claims": {
+                "P5137": [
+                    {
+                        "mainsnak": {
+                            "snaktype": "value",
+                            "property": "P5137",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 1377943,
+                                    "id": "Q1377943"
+                                },
+                                "type": "wikibase-entityid"
+                            }
+                        },
+                        "type": "statement",
+                        "id": "L3354-S3$533f724b-4b1a-bedc-b4b8-59cfecb9117e",
+                        "rank": "normal"
+                    }
+                ]
+            }
+        }
+    ]
+}

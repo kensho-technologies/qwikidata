@@ -1,0 +1,2423 @@
+{
+    "pageid": 6957550,
+    "ns": 120,
+    "title": "Property:P279",
+    "lastrevid": 715149687,
+    "modified": "2018-07-24T20:18:15Z",
+    "type": "property",
+    "datatype": "wikibase-item",
+    "id": "P279",
+    "labels": {
+        "en": {
+            "language": "en",
+            "value": "subclass of"
+        },
+        "ca": {
+            "language": "ca",
+            "value": "subclasse de"
+        },
+        "ko": {
+            "language": "ko",
+            "value": "\ub2e4\uc74c\uc758 \ud558\uc704 \uac1c\ub150\uc784"
+        },
+        "nl": {
+            "language": "nl",
+            "value": "subklasse van"
+        },
+        "sr": {
+            "language": "sr",
+            "value": "\u0458\u0435 \u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0430 \u043e\u0434"
+        },
+        "de": {
+            "language": "de",
+            "value": "Unterklasse von"
+        },
+        "ru": {
+            "language": "ru",
+            "value": "\u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441 \u043e\u0442"
+        },
+        "af": {
+            "language": "af",
+            "value": "'n soort"
+        },
+        "es": {
+            "language": "es",
+            "value": "subclase de"
+        },
+        "ja": {
+            "language": "ja",
+            "value": "\u4e0a\u4f4d\u30af\u30e9\u30b9"
+        },
+        "uk": {
+            "language": "uk",
+            "value": "\u0454 \u043f\u0456\u0434\u043a\u043b\u0430\u0441\u043e\u043c \u043a\u043b\u0430\u0441\u0443"
+        },
+        "it": {
+            "language": "it",
+            "value": "sottoclasse di"
+        },
+        "be": {
+            "language": "be",
+            "value": "\u0430\u0431\u0430\u0433\u0443\u043b\u044c\u043d\u044f\u0435\u0446\u0446\u0430"
+        },
+        "fr": {
+            "language": "fr",
+            "value": "sous-classe de"
+        },
+        "pt": {
+            "language": "pt",
+            "value": "subclasse de"
+        },
+        "fa": {
+            "language": "fa",
+            "value": "\u0632\u06cc\u0631\u0631\u062f\u06c0"
+        },
+        "hr": {
+            "language": "hr",
+            "value": "je podklasa od"
+        },
+        "sv": {
+            "language": "sv",
+            "value": "undergrupp till"
+        },
+        "gl": {
+            "language": "gl",
+            "value": "subclase de"
+        },
+        "he": {
+            "language": "he",
+            "value": "\u05ea\u05ea \u05e7\u05d1\u05d5\u05e6\u05d4 \u05e9\u05dc"
+        },
+        "min": {
+            "language": "min",
+            "value": "sub dari"
+        },
+        "id": {
+            "language": "id",
+            "value": "subkelas dari"
+        },
+        "pt-br": {
+            "language": "pt-br",
+            "value": "subclasse de"
+        },
+        "vi": {
+            "language": "vi",
+            "value": "ph\u00e2n l\u1edbp c\u1ee7a"
+        },
+        "el": {
+            "language": "el",
+            "value": "\u03c5\u03c0\u03bf\u03ba\u03bb\u03ac\u03c3\u03b7 \u03c4\u03bf\u03c5"
+        },
+        "ro": {
+            "language": "ro",
+            "value": "subclas\u0103 a"
+        },
+        "pl": {
+            "language": "pl",
+            "value": "podklasa dla"
+        },
+        "ilo": {
+            "language": "ilo",
+            "value": "subklase iti"
+        },
+        "da": {
+            "language": "da",
+            "value": "underklasse til"
+        },
+        "cs": {
+            "language": "cs",
+            "value": "nadt\u0159\u00edda"
+        },
+        "zh": {
+            "language": "zh",
+            "value": "\u4e0a\u7d1a\u5206\u985e"
+        },
+        "hu": {
+            "language": "hu",
+            "value": "aloszt\u00e1lya ennek"
+        },
+        "lv": {
+            "language": "lv",
+            "value": "apak\u0161klase"
+        },
+        "zh-cn": {
+            "language": "zh-cn",
+            "value": "\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "uz": {
+            "language": "uz",
+            "value": "quyidagi tushunchaning ostsinfidir"
+        },
+        "ka": {
+            "language": "ka",
+            "value": "\u10e5\u10d5\u10d4\u10d9\u10da\u10d0\u10e1\u10d8"
+        },
+        "nb": {
+            "language": "nb",
+            "value": "underklasse av"
+        },
+        "nds": {
+            "language": "nds",
+            "value": "\u00dcnnerklass vun"
+        },
+        "eo": {
+            "language": "eo",
+            "value": "sub-aro de"
+        },
+        "bn": {
+            "language": "bn",
+            "value": "\u0989\u09aa\u09b6\u09cd\u09b0\u09c7\u09a3\u09c0"
+        },
+        "bs": {
+            "language": "bs",
+            "value": "je podklasa od"
+        },
+        "zh-hans": {
+            "language": "zh-hans",
+            "value": "\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "zh-hant": {
+            "language": "zh-hant",
+            "value": "\u4e0a\u7d1a\u5206\u985e"
+        },
+        "zh-tw": {
+            "language": "zh-tw",
+            "value": "\u4e0a\u7d1a\u5206\u985e"
+        },
+        "sk": {
+            "language": "sk",
+            "value": "podraden\u00fd pojem"
+        },
+        "br": {
+            "language": "br",
+            "value": "isrummad eus"
+        },
+        "nds-nl": {
+            "language": "nds-nl",
+            "value": "onderklasse van"
+        },
+        "sq": {
+            "language": "sq",
+            "value": "n\u00ebnklas\u00eb e"
+        },
+        "be-tarask": {
+            "language": "be-tarask",
+            "value": "\u043f\u0430\u0434\u043a\u043b\u044f\u0441\u0430 \u0430\u0434"
+        },
+        "tr": {
+            "language": "tr",
+            "value": "alt s\u0131n\u0131f\u0131"
+        },
+        "bg": {
+            "language": "bg",
+            "value": "\u043f\u043e\u0434\u043a\u043b\u0430\u0441 \u043d\u0430"
+        },
+        "nn": {
+            "language": "nn",
+            "value": "er ein underklasse av"
+        },
+        "la": {
+            "language": "la",
+            "value": "supercategoria"
+        },
+        "th": {
+            "language": "th",
+            "value": "\u0e01\u0e25\u0e38\u0e48\u0e21\u0e22\u0e48\u0e2d\u0e22\u0e02\u0e2d\u0e07"
+        },
+        "en-gb": {
+            "language": "en-gb",
+            "value": "subclass of"
+        },
+        "en-ca": {
+            "language": "en-ca",
+            "value": "subclass of"
+        },
+        "oc": {
+            "language": "oc",
+            "value": "sosclassa de"
+        },
+        "mk": {
+            "language": "mk",
+            "value": "\u043f\u043e\u0442\u043a\u043b\u0430\u0441\u0430 \u043d\u0430"
+        },
+        "fi": {
+            "language": "fi",
+            "value": "alaluokka kohteelle"
+        },
+        "jbo": {
+            "language": "jbo",
+            "value": "lo se klesi"
+        },
+        "gu": {
+            "language": "gu",
+            "value": "\u0aa8\u0acb \u0aaa\u0ac7\u0a9f\u0abe-\u0aaa\u0acd\u0ab0\u0a95\u0abe\u0ab0"
+        },
+        "ms": {
+            "language": "ms",
+            "value": "subkelas"
+        },
+        "yi": {
+            "language": "yi",
+            "value": "\u05d0\u05d5\u05e0\u05d8\u05e2\u05e8\u05e7\u05dc\u05d0\u05e1 \u05e4\u05d5\u05df"
+        },
+        "is": {
+            "language": "is",
+            "value": "undirflokkur af"
+        },
+        "lb": {
+            "language": "lb",
+            "value": "\u00cbnnerklass vu(n)"
+        },
+        "sco": {
+            "language": "sco",
+            "value": "subcless o"
+        },
+        "hy": {
+            "language": "hy",
+            "value": "\u0565\u0576\u0569\u0561\u056f\u0561\u057f\u0565\u0563\u0578\u0580\u056b\u0561"
+        },
+        "gsw": {
+            "language": "gsw",
+            "value": "isch e Unterklass vo"
+        },
+        "zh-hk": {
+            "language": "zh-hk",
+            "value": "\u4e0a\u7d1a\u5206\u985e"
+        },
+        "te": {
+            "language": "te",
+            "value": "\u0c26\u0c40\u0c28\u0c3f\u0c2f\u0c4a\u0c15\u0c4d\u0c15 \u0c09\u0c2a\u0c24\u0c30\u0c17\u0c24\u0c3f"
+        },
+        "or": {
+            "language": "or",
+            "value": "\u0b0f\u0b39\u0b3e\u0b30 \u0b2e\u0b41\u0b16\u0b4d\u0b5f\u0b36\u0b4d\u0b30\u0b47\u0b23\u0b40"
+        },
+        "tl": {
+            "language": "tl",
+            "value": "ay uri ng"
+        },
+        "sr-ec": {
+            "language": "sr-ec",
+            "value": "\u0433\u0435\u043d\u0435\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0458\u0430"
+        },
+        "sr-el": {
+            "language": "sr-el",
+            "value": "generalizacija"
+        },
+        "hi": {
+            "language": "hi",
+            "value": "\u0915\u093e \u0909\u092a\u0935\u0930\u094d\u0917"
+        },
+        "sl": {
+            "language": "sl",
+            "value": "podpomenka od"
+        },
+        "ia": {
+            "language": "ia",
+            "value": "subclasse de"
+        },
+        "ksh": {
+            "language": "ksh",
+            "value": "es en Ongerjropp vun"
+        },
+        "scn": {
+            "language": "scn",
+            "value": "suttaclassi di"
+        },
+        "fy": {
+            "language": "fy",
+            "value": "subklasse fan"
+        },
+        "eu": {
+            "language": "eu",
+            "value": "honen azpiklasea"
+        },
+        "ce": {
+            "language": "ce",
+            "value": "\u0431\u0443\u0445\u0430\u0440\u0430 \u043a\u043b\u0430\u0441\u0441"
+        },
+        "ne": {
+            "language": "ne",
+            "value": "\u0915\u094b \u0909\u092a\u0938\u092e\u0942\u0939"
+        },
+        "ar": {
+            "language": "ar",
+            "value": "\u0635\u0646\u0641 \u0641\u0631\u0639\u064a \u0645\u0646"
+        },
+        "ast": {
+            "language": "ast",
+            "value": "subclase de"
+        },
+        "cy": {
+            "language": "cy",
+            "value": "isddosbarth o'r canlynol"
+        },
+        "et": {
+            "language": "et",
+            "value": "kuulub r\u00fchma"
+        },
+        "lt": {
+            "language": "lt",
+            "value": "poklasis"
+        },
+        "frr": {
+            "language": "frr",
+            "value": "Onerklas faan"
+        },
+        "mg": {
+            "language": "mg",
+            "value": "zana-tsokajy"
+        },
+        "ta": {
+            "language": "ta",
+            "value": "\u0b87\u0ba4\u0ba9\u0bcd \u0ba4\u0bc1\u0ba3\u0bc8\u0bb5\u0b95\u0bc8"
+        },
+        "fo": {
+            "language": "fo",
+            "value": "undirb\u00f3lkur av"
+        },
+        "zh-mo": {
+            "language": "zh-mo",
+            "value": "\u4e0a\u7d1a\u5206\u985e"
+        },
+        "zh-sg": {
+            "language": "zh-sg",
+            "value": "\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "ml": {
+            "language": "ml",
+            "value": "\u0d07\u0d24\u0d3f\u0d28\u0d4d\u0d31\u0d46 \u0d09\u0d2a\u0d35\u0d3f\u0d2d\u0d3e\u0d17\u0d02"
+        },
+        "io": {
+            "language": "io",
+            "value": "subklaso di"
+        },
+        "an": {
+            "language": "an",
+            "value": "subclase de"
+        },
+        "tg": {
+            "language": "tg",
+            "value": "\u0437\u0435\u0440\u0441\u0430\u04b3\u0438\u0444\u0430 \u0430\u0437"
+        },
+        "ga": {
+            "language": "ga",
+            "value": "fo-aicme de"
+        },
+        "yo": {
+            "language": "yo",
+            "value": "l\u00e1bee"
+        },
+        "tcy": {
+            "language": "tcy",
+            "value": "\u0c89\u0caa\u0cb5\u0cb0\u0ccd\u0c97\u0cca"
+        },
+        "kn": {
+            "language": "kn",
+            "value": "\u0c89\u0caa\u0cb5\u0cb0\u0ccd\u0c97"
+        },
+        "tg-cyrl": {
+            "language": "tg-cyrl",
+            "value": "\u0437\u0435\u0440\u0441\u0438\u043d\u0444 \u0430\u0437"
+        },
+        "tt-cyrl": {
+            "language": "tt-cyrl",
+            "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u043d\u044b\u04a3 \u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444\u044b"
+        },
+        "tt-latn": {
+            "language": "tt-latn",
+            "value": "men\u00e4 mon\u0131\u00f1 ass\u0131yn\u0131f\u0131"
+        },
+        "tt": {
+            "language": "tt",
+            "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u043d\u044b\u04a3 \u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444\u044b"
+        },
+        "hsb": {
+            "language": "hsb",
+            "value": "podrjadownja wot"
+        },
+        "pa": {
+            "language": "pa",
+            "value": "\u0a09\u0a2a \u0a38\u0a3c\u0a4d\u0a30\u0a47\u0a23\u0a40"
+        },
+        "ur": {
+            "language": "ur",
+            "value": "\u0630\u06cc\u0644\u06cc \u062f\u0631\u062c\u06c1"
+        },
+        "ba": {
+            "language": "ba",
+            "value": "\u0441\u0443\u0431\u043a\u043b\u0430\u0441\u0441"
+        },
+        "lfn": {
+            "language": "lfn",
+            "value": "suclase de"
+        },
+        "mr": {
+            "language": "mr",
+            "value": "\u0909\u092a\u0935\u0930\u094d\u0917"
+        }
+    },
+    "descriptions": {
+        "en": {
+            "language": "en",
+            "value": "all instances of these items are instances of those items; this item is a class (subset) of that item. Not to be confused with P31 (instance of)"
+        },
+        "nl": {
+            "language": "nl",
+            "value": "deze klasse is een deelverzameling van die (grotere) klasse"
+        },
+        "de": {
+            "language": "de",
+            "value": "Dieses Element ist eine Klasse/Gruppe jenes Elements (Beispiel: Auto ist eine Unterklasse von Fahrzeug)"
+        },
+        "ru": {
+            "language": "ru",
+            "value": "\u043a\u0430\u0436\u0434\u044b\u0439 \u0447\u0430\u0441\u0442\u043d\u044b\u0439 \u0441\u043b\u0443\u0447\u0430\u0439 \u0434\u0430\u043d\u043d\u043e\u0433\u043e \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430 \u0442\u0430\u043a\u0436\u0435 \u0447\u0430\u0441\u0442\u043d\u044b\u0439 \u0441\u043b\u0443\u0447\u0430\u0439 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0433\u043e(-\u0438\u0445) \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430(-\u043e\u0432)"
+        },
+        "ja": {
+            "language": "ja",
+            "value": "\u3053\u306e\u9805\u76ee\u3092\u4e0b\u4f4d\u3068\u3059\u308b\u4e0a\u4f4d\u306e\u30af\u30e9\u30b9\uff08\u5206\u985e\u30fb\u6982\u5ff5\uff09"
+        },
+        "es": {
+            "language": "es",
+            "value": "este elemento es una clase del otro"
+        },
+        "ilo": {
+            "language": "ilo",
+            "value": "amin dagitoy a banag ket pagarigan dagitoy a banag; daytoy a banag ket maysa a klase iti dayta a banag"
+        },
+        "nds-nl": {
+            "language": "nds-nl",
+            "value": "dit element is n spesifieke klasse van de klasse waor t in zit. Veurbeeld: auto is ne onderklasse van voertuug."
+        },
+        "en-gb": {
+            "language": "en-gb",
+            "value": "all instances of these items are instances of those items; this item is a class (subset) of that item. Not to be confused with P31 (instance of)"
+        },
+        "en-ca": {
+            "language": "en-ca",
+            "value": "all instances of these items are instances of those items; this item is a class (subset) of that item. Not to be confused with P31 (instance of)"
+        },
+        "cs": {
+            "language": "cs",
+            "value": "t\u0159\u00edda, jej\u00ed\u017e podt\u0159\u00eddou/podskupinou tato t\u0159\u00edda je (v\u0161echny prvky t\u00e9to mno\u017einy jsou tak\u00e9 prvky on\u00e9 mno\u017einy)"
+        },
+        "ca": {
+            "language": "ca",
+            "value": "aquest grup d'elements pertany a un altre grup m\u00e9s general"
+        },
+        "be": {
+            "language": "be",
+            "value": "\u0434\u0430\u043b\u0443\u0447\u0430\u0435 \u0434\u0430 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430 \u0441\u043f\u0456\u0441 \u0433\u0456\u043f\u0435\u0440\u043e\u043d\u0456\u043c\u0430\u045e - \u0448\u044b\u0440\u044d\u0439\u0448\u044b\u0445 \u043f\u0430\u043d\u044f\u0446\u0446\u044f\u045e, \u0447\u044b\u043c \u0433\u044d\u0442\u044b \u044d\u043b\u0435\u043c\u0435\u043d\u0442"
+        },
+        "fr": {
+            "language": "fr",
+            "value": "X sous-classe de Y : tous les \u00e9l\u00e9ments qui sont des instances (exemples) de X sont aussi des \u00e9l\u00e9ments instances de Y. Ne pas confondre avec la propri\u00e9t\u00e9 P31 (instance de)"
+        },
+        "pt-br": {
+            "language": "pt-br",
+            "value": "todas as inst\u00e2ncias destes itens s\u00e3o inst\u00e2ncias daqueles itens; este item \u00e9 uma classe daquele item. N\u00e3o confundir com Property:P31 (inst\u00e2ncia de)"
+        },
+        "gu": {
+            "language": "gu",
+            "value": "\u0a86 \u0ab2\u0ac7\u0a96 \u0a9b\u0ac7 \u0aa4\u0ac7 \u0ab2\u0ac7\u0a96\u0aa8\u0acb \u0aaa\u0acd\u0ab0\u0a95\u0abe\u0ab0 \u0a9b\u0ac7"
+        },
+        "hu": {
+            "language": "hu",
+            "value": "az elem egy csoportja ezeknek az elemeknek. P\u00e9lda: az aut\u00f3 egy aloszt\u00e1lya a j\u00e1rm\u0171veknek"
+        },
+        "fi": {
+            "language": "fi",
+            "value": "kaikki n\u00e4m\u00e4 kohteet ovat esiintymi\u00e4 noista kohteista; t\u00e4m\u00e4 kohde on tuon kohteen luokka"
+        },
+        "eo": {
+            "language": "eo",
+            "value": "\u0109iuj \u0109i eroj estas instancoj de tiuj eroj; tiu \u0109i ero estas subklaso de tiu ero"
+        },
+        "oc": {
+            "language": "oc",
+            "value": "X sosclassa de Y : totes los elements que son d'inst\u00e0ncias (exemples) de X son tanben d'elements inst\u00e0ncias de Y"
+        },
+        "da": {
+            "language": "da",
+            "value": "alle disse emner er tilf\u00e6lde af disse emner; dette emne er en klasse af det emne"
+        },
+        "zh": {
+            "language": "zh",
+            "value": "\u6b64\u9879\u7684\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "ko": {
+            "language": "ko",
+            "value": "\ud56d\ubaa9 \uc8fc\uc81c\ub294 \ub2e4\uc74c\uc758 \uac1c\ub150\uc744 \ud2b9\uc9d5\uc5d0 \ub530\ub77c \ub2e4\uc2dc \uc815\uc758\ud55c \ud558\uc704 \uac1c\ub150\uc784 (\uc774 \ud56d\ubaa9\uc744 \ubc94\uc8fc\ub85c \uc0bc\ub294 \ud558\uc704 \ud56d\ubaa9 \uc8fc\uc81c\ub4e4\uc758 \uc0c1\uc704 \uac1c\ub150\ub4e4\uc5d0\ub294 \uc774 \ud56d\ubaa9\uc758 \uc0c1\uc704 \uac1c\ub150\ub3c4 \ud3ec\ud568\ub418\uc5b4 \uc788\uc5b4\uc57c \ud568)"
+        },
+        "it": {
+            "language": "it",
+            "value": "tutti gli elementi che sono istanze (degli esempi di) del soggetto (propriet\u00e0 P31) sono anche istanze di questo elemento;"
+        },
+        "zh-hans": {
+            "language": "zh-hans",
+            "value": "\u6b64\u9879\u7684\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "zh-cn": {
+            "language": "zh-cn",
+            "value": "\u6b64\u9879\u7684\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "id": {
+            "language": "id",
+            "value": "semua contoh dari butir ini adalah bagian dari sebuah jenis lain yang lebih luas, jangan bingung dengan Atribut:P31 (contoh dari)"
+        },
+        "zh-hk": {
+            "language": "zh-hk",
+            "value": "\u6b64\u9805\u7684\u4e0a\u7d1a\u5206\u985e"
+        },
+        "sr": {
+            "language": "sr",
+            "value": "\u0441\u0432\u0438 \u043f\u0440\u0438\u043c\u0435\u0440\u0438 \u043e\u0432\u0438\u0445 \u0441\u0442\u0430\u0432\u043a\u0430 \u0441\u0443 \u0442\u0430\u043a\u043e\u0452\u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u0438 \u043e\u0432\u0438\u0445 \u0441\u0442\u0430\u0432\u043a\u0430; \u043e\u0432\u0430 \u0441\u0442\u0430\u0432\u043a\u0430 \u0458\u0435 \u043a\u043b\u0430\u0441\u0430 (\u043f\u043e\u0434\u0441\u0435\u0442) \u043e\u0432\u0435 \u0441\u0442\u0430\u0432\u043a\u0435. \u041d\u0435 \u043f\u043e\u0438\u0441\u0442\u043e\u0432\u0435\u045b\u0438\u0432\u0430\u0442\u0438 \u0441\u0430 P31 (\u0458\u0435)"
+        },
+        "sr-ec": {
+            "language": "sr-ec",
+            "value": "\u0441\u0432\u0435 \u043e\u0432\u0435 \u0441\u0442\u0430\u0432\u043a\u0435 \u0441\u0443 \u043f\u0440\u0438\u043c\u0435\u0440\u0438 \u0442\u0438\u0445 \u0441\u0442\u0430\u0432\u043a\u0438; \u043e\u0432\u0430 \u0441\u0442\u0430\u0432\u043a\u0430 \u0458\u0435 \u043a\u043b\u0430\u0441\u0430 \u0442\u0435 \u0441\u0442\u0430\u0432\u043a\u0435"
+        },
+        "sr-el": {
+            "language": "sr-el",
+            "value": "sve ove stavke su primeri tih stavki; ova stavka je klasa te stavke"
+        },
+        "nb": {
+            "language": "nb",
+            "value": "aktuelt element har forekomster som er en delmengde av det refererte elementets forekomster"
+        },
+        "pl": {
+            "language": "pl",
+            "value": "wszystkie elementy tego typu s\u0105 r\u00f3wnie\u017c elementami typu nadrz\u0119dnego"
+        },
+        "ksh": {
+            "language": "ksh",
+            "value": "dat heh es en kleinere Jropp vun Saache wie dat doh"
+        },
+        "scn": {
+            "language": "scn",
+            "value": "tutti l'esemplara di stu suggettu, su' macari esemplara di l'oggettu"
+        },
+        "fa": {
+            "language": "fa",
+            "value": "\u0647\u0645\u0647\u0654 \u0627\u06cc\u0646 \u0622\u06cc\u062a\u0645\u200c\u0647\u0627 \u0632\u06cc\u0631\u06af\u0631\u0648\u0647 \u0622\u0646  \u0622\u06cc\u062a\u0645 \u0647\u0633\u062a\u0646\u062f\u061b \u0627\u06cc\u0646 \u0622\u06cc\u062a\u0645 \u0628\u062e\u0634\u06cc \u0627\u0632 \u0622\u0646 \u0622\u06cc\u062a\u0645 \u0627\u0633\u062a."
+        },
+        "eu": {
+            "language": "eu",
+            "value": "elementu hau beste honen klase bat da"
+        },
+        "ast": {
+            "language": "ast",
+            "value": "esti grupu d'elementos pertenez a otru grupu m\u00e1s xeneral"
+        },
+        "uk": {
+            "language": "uk",
+            "value": "\u0443\u0441\u0456 \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u0438 \u0446\u0438\u0445 \u0435\u043b\u0435\u043c\u0435\u043d\u0442\u0456\u0432 \u0454 \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u0430\u043c\u0438 \u0435\u043b\u0435\u043c\u0435\u043d\u0442\u0456\u0432 \u0442\u0430\u043a\u043e\u0436 \u0446\u044c\u043e\u0433\u043e \u043a\u043b\u0430\u0441\u0443; \u043f\u0440\u0438\u0454\u0434\u043d\u0443\u0454 \u0434\u043e \u0435\u043b\u0435\u043c\u0435\u043d\u0442\u0430 \u043f\u0435\u0440\u0435\u043b\u0456\u043a \u0433\u0456\u043f\u0435\u0440\u043e\u043d\u0456\u043c\u0456\u0432 \u2014 \u0431\u0456\u043b\u044c\u0448 \u0448\u0438\u0440\u043e\u043a\u0438\u0445 \u043f\u043e\u043d\u044f\u0442\u044c; \u043d\u0435 \u043f\u043b\u0443\u0442\u0430\u0442\u0438 \u0437 Property:P31 (\u0454 \u043e\u0434\u043d\u0438\u043c \u0456\u0437)"
+        },
+        "zh-hant": {
+            "language": "zh-hant",
+            "value": "\u6b64\u9805\u7684\u4e0a\u7d1a\u5206\u985e"
+        },
+        "zh-mo": {
+            "language": "zh-mo",
+            "value": "\u6b64\u9805\u7684\u4e0a\u7d1a\u5206\u985e"
+        },
+        "zh-sg": {
+            "language": "zh-sg",
+            "value": "\u6b64\u9879\u7684\u4e0a\u7ea7\u5206\u7c7b"
+        },
+        "zh-tw": {
+            "language": "zh-tw",
+            "value": "\u6b64\u9805\u7684\u4e0a\u7d1a\u5206\u985e"
+        },
+        "el": {
+            "language": "el",
+            "value": "\u03b1\u03c5\u03c4\u03cc \u03c4\u03bf \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03bf \u03b5\u03af\u03bd\u03b1\u03b9 \u03bc\u03b9\u03b1 \u03c5\u03c0\u03bf\u03ba\u03bb\u03ac\u03c3\u03b7 \u03b5\u03ba\u03b5\u03af\u03bd\u03c9\u03bd \u03c4\u03c9\u03bd \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03c9\u03bd (\u03a0\u03b1\u03c1\u03ac\u03b4\u03b5\u03b9\u03b3\u03bc\u03b1: \u03c4\u03bf \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03b5\u03af\u03bd\u03b1\u03b9 \u03c5\u03c0\u03bf\u03ba\u03bb\u03ac\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03bc\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03b9\u03ba\u03bf\u03cd \u03bc\u03ad\u03c3\u03bf\u03c5)"
+        },
+        "pt": {
+            "language": "pt",
+            "value": "todas as inst\u00e2ncias destes itens s\u00e3o inst\u00e2ncias daqueles itens; este item \u00e9 uma classe daquele item. N\u00e3o confundir com Property:P31 (inst\u00e2ncia de)"
+        },
+        "sv": {
+            "language": "sv",
+            "value": "denna grupp av objekt \u00e4r en undergrupp till en mer \u00f6vergripande samlingsgrupp"
+        },
+        "ar": {
+            "language": "ar",
+            "value": "\u062c\u0645\u064a\u0639 \u062e\u0635\u0627\u0626\u0635 \u0647\u0630\u0647 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0647\u064a \u062e\u0635\u0627\u0626\u0635 \u0644\u062a\u0644\u0643 \u0627\u0644\u0639\u0646\u0627\u0635\u0631\u061b \u0647\u0630\u0627 \u0627\u0644\u0639\u0646\u0635\u0631 \u0647\u0648 \u0635\u0646\u0641 (\u0645\u062c\u0645\u0648\u0639\u0629 \u0641\u0631\u0639\u064a\u0629) \u0644\u0630\u0644\u0643 \u0627\u0644\u0639\u0646\u0635\u0631. \u0648\u064a\u062c\u0628 \u0623\u0646 \u0644\u0627 \u064a\u062a\u0645 \u0627\u0644\u062e\u0644\u0637 \u0628\u064a\u0646\u0647 \u0648\u0628\u064a\u0646 \u0627\u0644\u062e\u0627\u0635\u064a\u0629: P31 (\u062d\u0627\u0644\u0629 \u062e\u0627\u0635\u0629 \u0645\u0646)."
+        },
+        "tcy": {
+            "language": "tcy",
+            "value": "\u0c88 \u0c85\u0c82\u0cb8\u0cca\u0cb2\u0cc6 \u0cae\u0cbe\u0ca4 \u0ca8\u0cbf\u0ca6\u0cb0\u0ccd\u0cb6\u0ca8\u0cca\u0cb2\u0cc1 \u0c86 \u0c85\u0c82\u0cb8\u0cca\u0cb2\u0cc6 \u0ca8\u0cbf\u0ca6\u0cb0\u0ccd\u0cb6\u0ca8\u0cca\u0cb2\u0cc1 \u0c86\u0ca6\u0cc1\u0cb2\u0ccd\u0cb2\u0cca; \u0c88 \u0c85\u0c82\u0cb8\u0cca \u0c86 \u0c85\u0c82\u0cb8\u0cca\u0ca6 \u0cb5\u0cb0\u0ccd\u0c97\u0cca \u0c86\u0ca6\u0cc1\u0c82\u0ca1\u0cc1(\u0c89\u0caa\u0cb5\u0cbf\u0cac\u0cbe\u0c97\u0cca). P31 \u0c97\u0cc1\u0ca3\u0cca\u0c95\u0ccd\u0c95\u0cc1 \u0c97\u0cca\u0c82\u0ca6\u0cb2\u0cca \u0c86\u0cb5\u0cca\u0ca1\u0ccd\u0c9a\u0cbf"
+        },
+        "kn": {
+            "language": "kn",
+            "value": "\u0c88\u0c85\u0c82\u0cb6\u0c97\u0cb3 \u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0ca8\u0cbf\u0ca6\u0cb0\u0ccd\u0cb6\u0ca8\u0c97\u0cb3\u0cc1 \u0c86 \u0c85\u0c82\u0cb6\u0c97\u0cb3 \u0ca8\u0cbf\u0ca6\u0cb0\u0ccd\u0cb6\u0ca8\u0c97\u0cb3\u0cbe\u0c97\u0cbf\u0cb5\u0cc6; \u0c88 \u0c85\u0c82\u0cb6 \u0c86 \u0c85\u0c82\u0cb6\u0ca6 \u0cb5\u0cb0\u0ccd\u0c97\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0cc6 (\u0c89\u0caa\u0cb5\u0cbf\u0cad\u0cbe\u0c97). P31 \u0c97\u0cc1\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0c97\u0cca\u0c82\u0ca6\u0cb2\u0c95\u0ccd\u0c95\u0cc0\u0ca1\u0cbe\u0c97\u0cac\u0cbe\u0cb0\u0ca6\u0cc1"
+        },
+        "tt-cyrl": {
+            "language": "tt-cyrl",
+            "value": "\u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043a\u0430 \u0433\u0438\u043f\u043e\u043d\u0438\u043c \u043a\u0443\u0448\u0430 \u2014 \u043c\u043e\u04a3\u0430 \u043a\u0430\u0440\u0430\u0433\u0430\u043d\u0434\u0430 \u043a\u0438\u04a3\u0435\u0440\u04d9\u043a \u0442\u04e9\u0448\u0435\u043d\u0447\u04d9. Property:P31 (\"\u0442\u04e9\u0448\u0435\u043d\u0447\u04d9\u043d\u0435\u04a3 \u0430\u0435\u0440\u044b\u043c \u043e\u0447\u0440\u0430\u0433\u044b\") \u0431\u0435\u043b\u04d9\u043d \u0431\u0443\u0442\u0430\u043c\u0430\u0441\u043a\u0430!"
+        },
+        "tt-latn": {
+            "language": "tt-latn",
+            "value": "elementqa giponim qu\u015fa \u2014 mo\u00f1a qara\u011fanda ki\u00f1er\u00e4q t\u00f6\u015fen\u00e7\u00e4. Property:P31 (\"t\u00f6\u015fen\u00e7\u00e4ne\u00f1 ay\u0131r\u0131m o\u00e7ra\u011f\u0131\") bel\u00e4n butamasqa!"
+        },
+        "tt": {
+            "language": "tt",
+            "value": "\u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043a\u0430 \u0433\u0438\u043f\u043e\u043d\u0438\u043c \u043a\u0443\u0448\u0430 \u2014 \u043c\u043e\u04a3\u0430 \u043a\u0430\u0440\u0430\u0433\u0430\u043d\u0434\u0430 \u043a\u0438\u04a3\u0435\u0440\u04d9\u043a \u0442\u04e9\u0448\u0435\u043d\u0447\u04d9. Property:P31 (\"\u0442\u04e9\u0448\u0435\u043d\u0447\u04d9\u043d\u0435\u04a3 \u0430\u0435\u0440\u044b\u043c \u043e\u0447\u0440\u0430\u0433\u044b\") \u0431\u0435\u043b\u04d9\u043d \u0431\u0443\u0442\u0430\u043c\u0430\u0441\u043a\u0430!"
+        },
+        "pa": {
+            "language": "pa",
+            "value": "\u0a09\u0a2a \u0a38\u0a3c\u0a4d\u0a30\u0a47\u0a23\u0a40"
+        },
+        "or": {
+            "language": "or",
+            "value": "\u0b0f\u0b39\u0b3e \u0b2f\u0b47\u0b09\u0b01 \u0b36\u0b4d\u0b30\u0b47\u0b23\u0b40\u0b30 \u0b09\u0b2a\u0b36\u0b4d\u0b30\u0b47\u0b23\u0b40 \u0b05\u0b1f\u0b47"
+        },
+        "ms": {
+            "language": "ms",
+            "value": "semua contoh benda-benda ini ialah contoh benda-benda itu; benda ini ialah kelas (subset) benda itu. Jangan mengelirukan dengan P31 (contoh)"
+        }
+    },
+    "aliases": {
+        "en": [
+            {
+                "language": "en",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "en",
+                "value": "hyponym of"
+            },
+            {
+                "language": "en",
+                "value": "has superclass"
+            },
+            {
+                "language": "en",
+                "value": "is also a"
+            },
+            {
+                "language": "en",
+                "value": "subtype of"
+            },
+            {
+                "language": "en",
+                "value": "is a subtype of"
+            },
+            {
+                "language": "en",
+                "value": "subcategory of"
+            },
+            {
+                "language": "en",
+                "value": "is a category of"
+            },
+            {
+                "language": "en",
+                "value": "is thereby also a"
+            },
+            {
+                "language": "en",
+                "value": "is necessarily also a"
+            },
+            {
+                "language": "en",
+                "value": "whose instances are among"
+            },
+            {
+                "language": "en",
+                "value": "whose instances \u2286 those of"
+            },
+            {
+                "language": "en",
+                "value": "\u2286"
+            },
+            {
+                "language": "en",
+                "value": "\u2282"
+            }
+        ],
+        "de": [
+            {
+                "language": "de",
+                "value": "Hyponym von"
+            },
+            {
+                "language": "de",
+                "value": "ist Unterklasse von"
+            },
+            {
+                "language": "de",
+                "value": "ist eine Unterklasse von"
+            }
+        ],
+        "ru": [
+            {
+                "language": "ru",
+                "value": "\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0433\u0438\u043f\u043e\u043d\u0438\u043c\u043e\u043c \u043f\u043e \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u044e \u043a"
+            },
+            {
+                "language": "ru",
+                "value": "\u043d\u0430\u0434\u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0430 \u044d\u0442\u043e\u0433\u043e \u043f\u043e\u043d\u044f\u0442\u0438\u044f"
+            },
+            {
+                "language": "ru",
+                "value": "\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441\u043e\u043c \u0434\u043b\u044f"
+            },
+            {
+                "language": "ru",
+                "value": "\u0433\u0438\u043f\u043e\u043d\u0438\u043c \u043e\u0442"
+            },
+            {
+                "language": "ru",
+                "value": "\u043f\u043e\u0434\u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u043e\u0442"
+            },
+            {
+                "language": "ru",
+                "value": "\u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441 \u0432"
+            },
+            {
+                "language": "ru",
+                "value": "\u043f\u043e\u0434\u043f\u043e\u043d\u044f\u0442\u0438\u0435 \u043e\u0442"
+            },
+            {
+                "language": "ru",
+                "value": "\u043f\u043e\u0434\u043f\u043e\u043d\u044f\u0442\u0438\u0435 \u0432"
+            },
+            {
+                "language": "ru",
+                "value": "\u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441 \u043e\u0442"
+            },
+            {
+                "language": "ru",
+                "value": "\u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043a\u0430\u043a \u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441 \u043a"
+            },
+            {
+                "language": "ru",
+                "value": "\u0433\u0438\u043f\u0435\u0440\u043e\u043d\u0438\u043c"
+            },
+            {
+                "language": "ru",
+                "value": "\u043d\u0430\u0434\u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e:"
+            }
+        ],
+        "ja": [
+            {
+                "language": "ja",
+                "value": "\u4e0a\u4f4d\u6982\u5ff5"
+            },
+            {
+                "language": "ja",
+                "value": "\u89aa\u5206\u985e"
+            },
+            {
+                "language": "ja",
+                "value": "\u30b9\u30fc\u30d1\u30fc\u30af\u30e9\u30b9"
+            },
+            {
+                "language": "ja",
+                "value": "\u4e0a\u4f4d\u5206\u985e"
+            }
+        ],
+        "vi": [
+            {
+                "language": "vi",
+                "value": "m\u1ed9t trong nh\u1eefng"
+            }
+        ],
+        "nl": [
+            {
+                "language": "nl",
+                "value": "specialisatie"
+            },
+            {
+                "language": "nl",
+                "value": "variant"
+            },
+            {
+                "language": "nl",
+                "value": "subcategorie"
+            },
+            {
+                "language": "nl",
+                "value": "subtype"
+            }
+        ],
+        "nb": [
+            {
+                "language": "nb",
+                "value": "subklasse av"
+            },
+            {
+                "language": "nb",
+                "value": "hyponym av"
+            }
+        ],
+        "bg": [
+            {
+                "language": "bg",
+                "value": "\u043f\u043e\u0434\u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u043d\u0430"
+            },
+            {
+                "language": "bg",
+                "value": "\u043f\u043e\u0434\u0432\u0438\u0434 \u043d\u0430"
+            }
+        ],
+        "cs": [
+            {
+                "language": "cs",
+                "value": "je podt\u0159\u00eddou (\u010deho)"
+            },
+            {
+                "language": "cs",
+                "value": "nadskupina"
+            }
+        ],
+        "be": [
+            {
+                "language": "be",
+                "value": "\u043f\u0430\u0434\u043a\u043b\u0430\u0441 \u0430\u0434"
+            },
+            {
+                "language": "be",
+                "value": "\u043d\u0430\u0434\u043c\u043d\u043e\u0441\u0442\u0432\u0430"
+            },
+            {
+                "language": "be",
+                "value": "\u043d\u0430\u0434\u043c\u043d\u043e\u0441\u0442\u0432\u0430\u043c \u0437'\u044f\u045e\u043b\u044f\u0435\u0446\u0446\u0430"
+            }
+        ],
+        "fr": [
+            {
+                "language": "fr",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "fr",
+                "value": "est un type de"
+            },
+            {
+                "language": "fr",
+                "value": "sous classe de"
+            },
+            {
+                "language": "fr",
+                "value": "est une sous-classe de"
+            },
+            {
+                "language": "fr",
+                "value": "est une sous classe de"
+            },
+            {
+                "language": "fr",
+                "value": "type de"
+            },
+            {
+                "language": "fr",
+                "value": "est une vari\u00e9t\u00e9 de"
+            },
+            {
+                "language": "fr",
+                "value": "vari\u00e9t\u00e9 de"
+            },
+            {
+                "language": "fr",
+                "value": "est une sorte de"
+            },
+            {
+                "language": "fr",
+                "value": "sorte de"
+            },
+            {
+                "language": "fr",
+                "value": "est un hyponyme de"
+            },
+            {
+                "language": "fr",
+                "value": "hyponyme de"
+            }
+        ],
+        "ko": [
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704\ubd84\ub958"
+            },
+            {
+                "language": "ko",
+                "value": "\ubd84\ub958"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704\ubc94\uc8fc"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \ubc94\uc8fc"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \ubd84\ub958"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \ubd80\ub958"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c\uc758 \ud558\uc704 \ubd80\ub958\uc784"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c\uc758 \uc138\ubd80 \ubd80\ub958\uc784"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \uc885\ub958"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704\uac08\ub798"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c \uac08\ub798\uc5d0\uc11c \ubed7\uc5b4\ub098\uc634"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \uac08\ub798"
+            },
+            {
+                "language": "ko",
+                "value": "\uace0\uae09 \uac1c\ub150"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704 \uac1c\ub150"
+            },
+            {
+                "language": "ko",
+                "value": "\uc720\uac1c\ub150"
+            },
+            {
+                "language": "ko",
+                "value": "\uc774 \uac1c\ub150\uc758 \uc0c1\uc704 \uac1c\ub150"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c \uac1c\ub150\uc758 \ud558\uc704 \uac1c\ub150\uc784"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c \uac1c\ub150\uc758 \ud558\uc704\uac1c\ub150\uc784"
+            },
+            {
+                "language": "ko",
+                "value": "\uc0c1\uc704\uac1c\ub150"
+            },
+            {
+                "language": "ko",
+                "value": "\ub2e4\uc74c\uc758 \ud558\uc704\uac1c\ub150\uc784"
+            }
+        ],
+        "pl": [
+            {
+                "language": "pl",
+                "value": "typ nadrz\u0119dny"
+            }
+        ],
+        "fi": [
+            {
+                "language": "fi",
+                "value": "yleistys"
+            }
+        ],
+        "scn": [
+            {
+                "language": "scn",
+                "value": "\u00e8 na sorta di"
+            }
+        ],
+        "ca": [
+            {
+                "language": "ca",
+                "value": "\u00e9s subclasse de"
+            }
+        ],
+        "cy": [
+            {
+                "language": "cy",
+                "value": "isddosbarth o"
+            }
+        ],
+        "uk": [
+            {
+                "language": "uk",
+                "value": "\u0433\u0456\u043f\u043e\u043d\u0456\u043c \u0432\u0456\u0434"
+            },
+            {
+                "language": "uk",
+                "value": "\u0433\u0456\u043f\u0435\u0440\u043e\u043d\u0456\u043c:"
+            },
+            {
+                "language": "uk",
+                "value": "\u043f\u0456\u0434\u043c\u043d\u043e\u0436\u0438\u043d\u0430 \u0432\u0456\u0434"
+            },
+            {
+                "language": "uk",
+                "value": "\u043d\u0430\u0434\u043c\u043d\u043e\u0436\u0438\u043d\u0430:"
+            },
+            {
+                "language": "uk",
+                "value": "\u043f\u0456\u0434\u043a\u043b\u0430\u0441 \u0432\u0456\u0434"
+            }
+        ],
+        "id": [
+            {
+                "language": "id",
+                "value": "hiponim dari"
+            },
+            {
+                "language": "id",
+                "value": "jenis dari"
+            },
+            {
+                "language": "id",
+                "value": "adalah sebuah jenis dari"
+            },
+            {
+                "language": "id",
+                "value": "varietas dari"
+            },
+            {
+                "language": "id",
+                "value": "macam dari"
+            }
+        ],
+        "zh-hk": [
+            {
+                "language": "zh-hk",
+                "value": "\u7236\u985e"
+            }
+        ],
+        "zh": [
+            {
+                "language": "zh",
+                "value": "\u7236\u985e"
+            },
+            {
+                "language": "zh",
+                "value": "\u7236\u7c7b"
+            },
+            {
+                "language": "zh",
+                "value": "\u4e0a\u4e00\u7ea7\u5206\u7c7b"
+            }
+        ],
+        "zh-cn": [
+            {
+                "language": "zh-cn",
+                "value": "\u7236\u7c7b"
+            }
+        ],
+        "zh-hans": [
+            {
+                "language": "zh-hans",
+                "value": "\u7236\u7c7b"
+            }
+        ],
+        "zh-hant": [
+            {
+                "language": "zh-hant",
+                "value": "\u7236\u985e"
+            }
+        ],
+        "zh-mo": [
+            {
+                "language": "zh-mo",
+                "value": "\u7236\u985e"
+            }
+        ],
+        "zh-sg": [
+            {
+                "language": "zh-sg",
+                "value": "\u7236\u7c7b"
+            }
+        ],
+        "zh-tw": [
+            {
+                "language": "zh-tw",
+                "value": "\u7236\u985e"
+            }
+        ],
+        "pt": [
+            {
+                "language": "pt",
+                "value": "tipo de"
+            },
+            {
+                "language": "pt",
+                "value": "\u00e9 um tipo de"
+            },
+            {
+                "language": "pt",
+                "value": "generaliza\u00e7\u00e3o"
+            },
+            {
+                "language": "pt",
+                "value": "generalizado por"
+            },
+            {
+                "language": "pt",
+                "value": "hip\u00f4nimo de"
+            },
+            {
+                "language": "pt",
+                "value": "\u00e9 (uma) subclasse de"
+            },
+            {
+                "language": "pt",
+                "value": "rdfs:subClassOf"
+            }
+        ],
+        "it": [
+            {
+                "language": "it",
+                "value": "sottoinsieme"
+            },
+            {
+                "language": "it",
+                "value": "\u00e8 sottoinsieme"
+            },
+            {
+                "language": "it",
+                "value": "\u00e8 incluso in"
+            },
+            {
+                "language": "it",
+                "value": "incluso in"
+            },
+            {
+                "language": "it",
+                "value": "\u00e8 sottoclasse di"
+            },
+            {
+                "language": "it",
+                "value": "\u00e8 sottoinsieme di"
+            },
+            {
+                "language": "it",
+                "value": "sottoinsieme di"
+            },
+            {
+                "language": "it",
+                "value": "iponimo di"
+            }
+        ],
+        "ar": [
+            {
+                "language": "ar",
+                "value": "\u0646\u0648\u0639 \u0641\u0631\u0639\u064a \u0645\u0646"
+            },
+            {
+                "language": "ar",
+                "value": "\u0641\u0626\u0629 \u0641\u0631\u0639\u064a\u0629 \u0645\u0646"
+            }
+        ],
+        "yo": [
+            {
+                "language": "yo",
+                "value": "j\u00e9 ara"
+            }
+        ],
+        "tcy": [
+            {
+                "language": "tcy",
+                "value": "\u0c95\u0cbf\u0ca8\u0ccd\u0caf \u0caa\u0cc1\u0ca6\u0cb0\u0ccd"
+            },
+            {
+                "language": "tcy",
+                "value": "\u0c89\u0caa\u0cb5\u0cbf\u0cac\u0cbe\u0c97\u0cca"
+            }
+        ],
+        "kn": [
+            {
+                "language": "kn",
+                "value": "\u0cb8\u0c82\u0c95\u0ccd\u0cb7\u0cbf\u0caa\u0ccd\u0ca4 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1"
+            },
+            {
+                "language": "kn",
+                "value": "\u0c89\u0caa\u0cb5\u0cbf\u0cad\u0cbe\u0c97"
+            }
+        ],
+        "tt-cyrl": [
+            {
+                "language": "tt-cyrl",
+                "value": "\u2286"
+            },
+            {
+                "language": "tt-cyrl",
+                "value": "\u2282"
+            },
+            {
+                "language": "tt-cyrl",
+                "value": "\u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u0448\u0438\u043a\u0435\u043b\u043b\u0435 \u043c\u043e\u04a3\u0430 \u043a\u0430\u0442\u043d\u0430\u0448\u0430"
+            },
+            {
+                "language": "tt-cyrl",
+                "value": "\u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u043a\u0435\u0431\u0435\u043a \u043c\u043e\u04a3\u0430 \u043a\u0430\u0442\u043d\u0430\u0448\u0430"
+            },
+            {
+                "language": "tt-cyrl",
+                "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u043d\u044b\u04a3 \u0433\u0438\u043f\u043e\u043d\u0438\u043c\u044b"
+            },
+            {
+                "language": "tt-cyrl",
+                "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u04a3\u0430 \u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u0431\u0443\u043b\u0430"
+            }
+        ],
+        "tt-latn": [
+            {
+                "language": "tt-latn",
+                "value": "\u2286"
+            },
+            {
+                "language": "tt-latn",
+                "value": "\u2282"
+            },
+            {
+                "language": "tt-latn",
+                "value": "ass\u0131yn\u0131f \u015fikelle mo\u00f1a qatna\u015fa"
+            },
+            {
+                "language": "tt-latn",
+                "value": "ass\u0131yn\u0131f kebek mo\u00f1a qatna\u015fa"
+            },
+            {
+                "language": "tt-latn",
+                "value": "men\u00e4 mon\u0131\u00f1 giponim\u0131"
+            },
+            {
+                "language": "tt-latn",
+                "value": "men\u00e4 mo\u00f1a ass\u0131yn\u0131f bula"
+            }
+        ],
+        "tt": [
+            {
+                "language": "tt",
+                "value": "\u2286"
+            },
+            {
+                "language": "tt",
+                "value": "\u2282"
+            },
+            {
+                "language": "tt",
+                "value": "\u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u0448\u0438\u043a\u0435\u043b\u043b\u0435 \u043c\u043e\u04a3\u0430 \u043a\u0430\u0442\u043d\u0430\u0448\u0430"
+            },
+            {
+                "language": "tt",
+                "value": "\u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u043a\u0435\u0431\u0435\u043a \u043c\u043e\u04a3\u0430 \u043a\u0430\u0442\u043d\u0430\u0448\u0430"
+            },
+            {
+                "language": "tt",
+                "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u043d\u044b\u04a3 \u0433\u0438\u043f\u043e\u043d\u0438\u043c\u044b"
+            },
+            {
+                "language": "tt",
+                "value": "\u043c\u0435\u043d\u04d9 \u043c\u043e\u04a3\u0430 \u0430\u0441\u0441\u044b\u0439\u043d\u044b\u0444 \u0431\u0443\u043b\u0430"
+            }
+        ],
+        "pt-br": [
+            {
+                "language": "pt-br",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "pt-br",
+                "value": "\u00e9 um subgrupo de"
+            },
+            {
+                "language": "pt-br",
+                "value": "possui uma superclasse"
+            },
+            {
+                "language": "pt-br",
+                "value": "\u00e9 um subtipo de"
+            },
+            {
+                "language": "pt-br",
+                "value": "\u00e9 uma categoria de"
+            }
+        ],
+        "pa": [
+            {
+                "language": "pa",
+                "value": "\u0a38\u0a2c\u0a38\u0a48\u0a71\u0a1f"
+            },
+            {
+                "language": "pa",
+                "value": "\u0a09\u0a2a-\u0a15\u0a3f\u0a38\u0a2e"
+            }
+        ],
+        "or": [
+            {
+                "language": "or",
+                "value": "\u0b0f\u0b39\u0b3e\u0b30 \u0b09\u0b2a\u0b30\u0b36\u0b4d\u0b30\u0b47\u0b23\u0b40"
+            },
+            {
+                "language": "or",
+                "value": "\u0b0f\u0b39\u0b3e\u0b30 \u0b2e\u0b42\u0b33\u0b36\u0b4d\u0b30\u0b47\u0b23\u0b40"
+            }
+        ],
+        "en-ca": [
+            {
+                "language": "en-ca",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "en-ca",
+                "value": "hyponym of"
+            },
+            {
+                "language": "en-ca",
+                "value": "has superclass"
+            },
+            {
+                "language": "en-ca",
+                "value": "is also a"
+            },
+            {
+                "language": "en-ca",
+                "value": "subtype of"
+            },
+            {
+                "language": "en-ca",
+                "value": "is a subtype of"
+            },
+            {
+                "language": "en-ca",
+                "value": "subcategory of"
+            },
+            {
+                "language": "en-ca",
+                "value": "is a category of"
+            },
+            {
+                "language": "en-ca",
+                "value": "is thereby also a"
+            },
+            {
+                "language": "en-ca",
+                "value": "is necessarily also a"
+            },
+            {
+                "language": "en-ca",
+                "value": "whose instances are among"
+            },
+            {
+                "language": "en-ca",
+                "value": "whose instances \u2286 those of"
+            },
+            {
+                "language": "en-ca",
+                "value": "\u2286"
+            },
+            {
+                "language": "en-ca",
+                "value": "\u2282"
+            }
+        ],
+        "en-gb": [
+            {
+                "language": "en-gb",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "en-gb",
+                "value": "hyponym of"
+            },
+            {
+                "language": "en-gb",
+                "value": "has superclass"
+            },
+            {
+                "language": "en-gb",
+                "value": "is also a"
+            },
+            {
+                "language": "en-gb",
+                "value": "subtype of"
+            },
+            {
+                "language": "en-gb",
+                "value": "is a subtype of"
+            },
+            {
+                "language": "en-gb",
+                "value": "subcategory of"
+            },
+            {
+                "language": "en-gb",
+                "value": "is a category of"
+            },
+            {
+                "language": "en-gb",
+                "value": "is thereby also a"
+            },
+            {
+                "language": "en-gb",
+                "value": "is necessarily also a"
+            },
+            {
+                "language": "en-gb",
+                "value": "whose instances are among"
+            },
+            {
+                "language": "en-gb",
+                "value": "whose instances \u2286 those of"
+            },
+            {
+                "language": "en-gb",
+                "value": "\u2286"
+            },
+            {
+                "language": "en-gb",
+                "value": "\u2282"
+            }
+        ],
+        "ms": [
+            {
+                "language": "ms",
+                "value": "rdfs:subClassOf"
+            },
+            {
+                "language": "ms",
+                "value": "mempunyai kelas besar"
+            },
+            {
+                "language": "ms",
+                "value": "subjenis"
+            },
+            {
+                "language": "ms",
+                "value": "ialah subjenis"
+            },
+            {
+                "language": "ms",
+                "value": "subkategori"
+            },
+            {
+                "language": "ms",
+                "value": "ialah subkategori"
+            },
+            {
+                "language": "ms",
+                "value": "ialah kategori"
+            },
+            {
+                "language": "ms",
+                "value": "\u2286"
+            },
+            {
+                "language": "ms",
+                "value": "\u2282"
+            }
+        ]
+    },
+    "claims": {
+        "P1629": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1629",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 21514624,
+                            "id": "Q21514624"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$b6294dd8-41cc-3ab7-2186-9b25d5152f04",
+                "rank": "normal"
+            }
+        ],
+        "P1628": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1628",
+                    "datavalue": {
+                        "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+                        "type": "string"
+                    },
+                    "datatype": "url"
+                },
+                "type": "statement",
+                "id": "P279$02eb190f-49ef-f07a-e877-65040da289cf",
+                "rank": "normal"
+            }
+        ],
+        "P31": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 18647515,
+                            "id": "Q18647515"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$ceaaf704-4d0a-cbc5-9dca-699506106bb3",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 18647519,
+                            "id": "Q18647519"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$cf454174-4124-2d03-c9a1-bc6c4d079898",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 28326461,
+                            "id": "Q28326461"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$7d8d99fa-44f4-9ad2-43eb-38fed8a1ad6c",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 18616576,
+                            "id": "Q18616576"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$120338ea-4b5c-b4cb-239d-41caa8764fa1",
+                "rank": "normal"
+            }
+        ],
+        "P1659": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1659",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "property",
+                            "numeric-id": 31,
+                            "id": "P31"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-property"
+                },
+                "type": "statement",
+                "id": "P279$f201e0a6-4471-5523-6e3f-417b4e1b5f36",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1659",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "property",
+                            "numeric-id": 361,
+                            "id": "P361"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-property"
+                },
+                "type": "statement",
+                "id": "P279$c5553af2-442c-ca0f-a3aa-f0c1d9510df4",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1659",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "property",
+                            "numeric-id": 171,
+                            "id": "P171"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-property"
+                },
+                "type": "statement",
+                "id": "P279$1b0be3a4-4b08-66d5-1871-4d8f4980cf15",
+                "rank": "normal"
+            }
+        ],
+        "P1896": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1896",
+                    "datavalue": {
+                        "value": "http://www.w3.org/TR/rdf-schema/#ch_subclassof",
+                        "type": "string"
+                    },
+                    "datatype": "url"
+                },
+                "type": "statement",
+                "id": "P279$9DD44A1C-CF13-4149-BA3E-2A3A3F86C6A5",
+                "rank": "normal",
+                "references": [
+                    {
+                        "hash": "b56ec06e08a33d2c95c2e8bace0c41af1f141deb",
+                        "snaks": {
+                            "P1683": [
+                                {
+                                    "snaktype": "value",
+                                    "property": "P1683",
+                                    "datavalue": {
+                                        "value": {
+                                            "text": "rdfs:subClassOf",
+                                            "language": "en"
+                                        },
+                                        "type": "monolingualtext"
+                                    },
+                                    "datatype": "monolingualtext"
+                                }
+                            ]
+                        },
+                        "snaks-order": [
+                            "P1683"
+                        ]
+                    }
+                ]
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1896",
+                    "datavalue": {
+                        "value": "http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Classes_and_Instances",
+                        "type": "string"
+                    },
+                    "datatype": "url"
+                },
+                "type": "statement",
+                "id": "P279$FE074A54-B837-482F-8149-C7047C4CF2FC",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1896",
+                    "datavalue": {
+                        "value": "https://en.wikipedia.org/wiki/CycL",
+                        "type": "string"
+                    },
+                    "datatype": "url"
+                },
+                "type": "statement",
+                "id": "P279$ec9b0cbb-4b4b-1520-b9f3-c59769f8570d",
+                "rank": "normal",
+                "references": [
+                    {
+                        "hash": "ade9f4d043790761977879189e77ce0bc7844364",
+                        "snaks": {
+                            "P1683": [
+                                {
+                                    "snaktype": "value",
+                                    "property": "P1683",
+                                    "datavalue": {
+                                        "value": {
+                                            "text": "predicate #$genls, \"generalization\"",
+                                            "language": "en"
+                                        },
+                                        "type": "monolingualtext"
+                                    },
+                                    "datatype": "monolingualtext"
+                                }
+                            ]
+                        },
+                        "snaks-order": [
+                            "P1683"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "P1855": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1855",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 89,
+                            "id": "Q89"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P279": [
+                        {
+                            "snaktype": "value",
+                            "property": "P279",
+                            "hash": "c1458af49cb2644290b1622c83a80bded55bac79",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 3314483,
+                                    "id": "Q3314483"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P279"
+                ],
+                "id": "P279$816c6949-41fc-3cdd-3286-e4bc75e0fc5f",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1855",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 3314483,
+                            "id": "Q3314483"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P279": [
+                        {
+                            "snaktype": "value",
+                            "property": "P279",
+                            "hash": "0403108e891cb5518671657f4606a1d743a62481",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 1364,
+                                    "id": "Q1364"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P279"
+                ],
+                "id": "P279$70098066-425d-d08c-a02d-65e3bccdaa1d",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1855",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 146,
+                            "id": "Q146"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P279": [
+                        {
+                            "snaktype": "value",
+                            "property": "P279",
+                            "hash": "74114f928f78defd7723a5ae0a640c5ae837a81f",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 622852,
+                                    "id": "Q622852"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P279"
+                ],
+                "id": "P279$bd828f72-4dfe-52bd-0734-5e4d611683ca",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1855",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 2294,
+                            "id": "Q2294"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P279": [
+                        {
+                            "snaktype": "value",
+                            "property": "P279",
+                            "hash": "a47233a36d7d383c1401f1ff0069b52cb084c184",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 159731,
+                                    "id": "Q159731"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P279"
+                ],
+                "id": "P279$12e23a79-4cb2-99ca-417d-314fcfb8039d",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P1855",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 840660,
+                            "id": "Q840660"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P279": [
+                        {
+                            "snaktype": "value",
+                            "property": "P279",
+                            "hash": "00bc4344006b779665c1d31d1c444c390ccdaa79",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 623,
+                                    "id": "Q623"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P279"
+                ],
+                "id": "P279$9c0b7491-4829-306a-beaa-fcf084e19c2f",
+                "rank": "normal"
+            }
+        ],
+        "P2559": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2559",
+                    "datavalue": {
+                        "value": {
+                            "text": "About this property, please read https://www.wikidata.org/wiki/Help:Basic_membership_properties",
+                            "language": "en"
+                        },
+                        "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P2699": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2699",
+                            "hash": "8562fc99be930b4b4ec3e439f167a7916b2a0e95",
+                            "datavalue": {
+                                "value": "https://www.wikidata.org/wiki/Help:Basic_membership_properties",
+                                "type": "string"
+                            },
+                            "datatype": "url"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P2699"
+                ],
+                "id": "P279$69A63146-6BE0-4B97-8810-6FCF808B7678",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2559",
+                    "datavalue": {
+                        "value": {
+                            "text": "Class items can be documented using {{Item documentation}} on their talk page and by adding a list of properties in their Talk:Q<id>/class subpage (work in progress)",
+                            "language": "en"
+                        },
+                        "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                },
+                "type": "statement",
+                "id": "P279$3E8CF35B-A236-4FCA-B317-B5EBCDD6492E",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2559",
+                    "datavalue": {
+                        "value": {
+                            "text": "\u041d\u0435 \u043f\u0443\u0442\u0430\u0442\u044c \u0441\u043e \u0441\u0432\u043e\u0439\u0441\u0442\u0432\u043e\u043c P31. \u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043d\u0430 https://www.wikidata.org/wiki/Help:Basic_membership_properties",
+                            "language": "ru"
+                        },
+                        "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                },
+                "type": "statement",
+                "id": "P279$0d1c64b3-416a-cf13-13c4-5f8f92d5278b",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2559",
+                    "datavalue": {
+                        "value": {
+                            "text": "\u5173\u4e8e\u6b64\u5c5e\u6027\uff0c\u8bf7\u9605\u8bfbhttps://www.wikidata.org/wiki/Help:Basic_membership_properties",
+                            "language": "zh-hans"
+                        },
+                        "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                },
+                "type": "statement",
+                "id": "P279$e3aebdd2-455d-c95c-e7e1-3e546b2350e0",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2559",
+                    "datavalue": {
+                        "value": {
+                            "text": "\u4ee5\u4e0b\u306e\u30d8\u30eb\u30d7\u3092\u53c2\u7167\u3057\u3066\u304f\u3060\u3055\u3044",
+                            "language": "ja"
+                        },
+                        "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P2699": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2699",
+                            "hash": "edb5b49b0203a8f359389fe351a22ff40f492893",
+                            "datavalue": {
+                                "value": "https://www.wikidata.org/wiki/Help:Basic_membership_properties/ja",
+                                "type": "string"
+                            },
+                            "datatype": "url"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P2699"
+                ],
+                "id": "P279$7c29525f-4ba9-b0a6-fb3d-c8a4e92a1d17",
+                "rank": "normal"
+            }
+        ],
+        "P2875": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2875",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 23909012,
+                            "id": "Q23909012"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$34339b18-4d11-01c5-8b71-d0cf8a1c54dc",
+                "rank": "normal"
+            }
+        ],
+        "P3254": [
+            {
+                "mainsnak": {
+                    "snaktype": "novalue",
+                    "property": "P3254",
+                    "datatype": "url"
+                },
+                "type": "statement",
+                "id": "P279$55c00640-48cf-8836-3206-8904a6b08ca5",
+                "rank": "normal"
+            }
+        ],
+        "P2302": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2302",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 21502838,
+                            "id": "Q21502838"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P2306": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2306",
+                            "hash": "c80b10b5e1e231d8fb29c63903aa48da0afe0b3e",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "property",
+                                    "numeric-id": 31,
+                                    "id": "P31"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-property"
+                        }
+                    ],
+                    "P2305": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2305",
+                            "hash": "6d04823e693cdf4b56d453c92e49ca805379f116",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 502895,
+                                    "id": "Q502895"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        },
+                        {
+                            "snaktype": "value",
+                            "property": "P2305",
+                            "hash": "bb9d4baa15399514941d55763fd31ed082f11cb2",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 11266439,
+                                    "id": "Q11266439"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        },
+                        {
+                            "snaktype": "value",
+                            "property": "P2305",
+                            "hash": "526298952ddbd7bc753ee2bdcf41363a98b51b49",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 13406463,
+                                    "id": "Q13406463"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        },
+                        {
+                            "snaktype": "value",
+                            "property": "P2305",
+                            "hash": "e4c163410f6dc3b7b76d7285d7b848e6a9d160bd",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 4167836,
+                                    "id": "Q4167836"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        },
+                        {
+                            "snaktype": "value",
+                            "property": "P2305",
+                            "hash": "a21ccf716d70a7d916c9c753dc8c03ab4064e3a7",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 18616576,
+                                    "id": "Q18616576"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P2306",
+                    "P2305"
+                ],
+                "id": "P279$451EFD1A-AFA8-4D8D-9785-B207C7126C09",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2302",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 53869507,
+                            "id": "Q53869507"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P5314": [
+                        {
+                            "snaktype": "value",
+                            "property": "P5314",
+                            "hash": "a0202111cb525ed31611bf926974b74a2419b8ab",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 54828448,
+                                    "id": "Q54828448"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P5314"
+                ],
+                "id": "P279$04A44300-66EA-4BA2-9A9C-C29CB69137F8",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2302",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 21502838,
+                            "id": "Q21502838"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P2306": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2306",
+                            "hash": "45a815dbd48fab395345758b466886a0d0d8a661",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "property",
+                                    "numeric-id": 1647,
+                                    "id": "P1647"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-property"
+                        }
+                    ],
+                    "P2316": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2316",
+                            "hash": "d50c571a43e6102d65b729ccc7049a0a2f867e34",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 21502408,
+                                    "id": "Q21502408"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P2306",
+                    "P2316"
+                ],
+                "id": "P279$47fbd963-465a-3d27-ac95-bec8e18db88b",
+                "rank": "normal"
+            },
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2302",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 21510864,
+                            "id": "Q21510864"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "qualifiers": {
+                    "P2306": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2306",
+                            "hash": "a053b8635aeb647dc23c8b4676ed43ce077381e6",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "property",
+                                    "numeric-id": 279,
+                                    "id": "P279"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-property"
+                        }
+                    ],
+                    "P2303": [
+                        {
+                            "snaktype": "value",
+                            "property": "P2303",
+                            "hash": "fed97a3ecee1c00189965e6c74be1bba345c3f40",
+                            "datavalue": {
+                                "value": {
+                                    "entity-type": "item",
+                                    "numeric-id": 35120,
+                                    "id": "Q35120"
+                                },
+                                "type": "wikibase-entityid"
+                            },
+                            "datatype": "wikibase-item"
+                        }
+                    ]
+                },
+                "qualifiers-order": [
+                    "P2306",
+                    "P2303"
+                ],
+                "id": "P279$7E25825D-1E67-4535-8287-1C9D6DC0AE36",
+                "rank": "normal"
+            }
+        ],
+        "P3734": [
+            {
+                "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3734",
+                    "datavalue": {
+                        "value": {
+                            "entity-type": "item",
+                            "numeric-id": 42533435,
+                            "id": "Q42533435"
+                        },
+                        "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                },
+                "type": "statement",
+                "id": "P279$63D7E84C-B696-465C-B658-0429DEB83D83",
+                "rank": "normal"
+            }
+        ]
+    }
+}
