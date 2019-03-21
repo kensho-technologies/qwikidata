@@ -14,7 +14,7 @@ in a Pythonic way.  It also provides a Pythonic way to access three data sources
 Full Documentation
 ==================
 
-The full documentation for this project is hosted at https://readthedocs.org/projects/qwikidata/
+The full documentation for this project is hosted at https://qwikidata.readthedocs.io/en/latest/
 
 Quick Install
 =============
