@@ -155,9 +155,7 @@ intersphinx_mapping = {"https://docs.python.org/": None}
 
 
 def run_apidoc(_):
-    ignore_paths = [
-        ...
-    ]
+    ignore_paths = []
 
     argv = [
         "-f",
