@@ -1,0 +1,113 @@
+repos:
+
+
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: master
+    hooks:
+    - id: autopep8
+      description: "Applies a subset of autopep8's fixes to Python code"
+      args:
+      - --in-place
+      # enable max aggresiveness because all the errors are hand picked
+      - -aaa
+      - --max-line-length
+      - "100"
+      - --select
+      # autopep8 is used for structure rather than style here, which is why only a few error codes are
+      # selected
+      - W292,E502,E266,E402,E713,E714,E721,E722,E731
+
+
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    -   id: black
+        description: "Runs black over Python code"
+        args: ["--py36", "-l", "100", "-N"]
+
+
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: master
+    hooks:
+    -   id: isort
+        description: "Runs isort over Python code"
+
+
+-   repo: https://github.com/myint/docformatter
+    rev: master
+    hooks:
+    -   id: docformatter
+        name: docformatter
+        description: 'Formats docstrings to follow PEP 257.'
+        entry: docformatter
+        language: python
+
+
+-   repo: git://github.com/chewse/pre-commit-mirrors-pydocstyle
+    sha: master
+    hooks:
+    -   id: pydocstyle
+        name: pydocstyle
+        description: "Runs pydocstyle over Python code"
+        entry: pydocstyle
+        language: python
+        language_version: python3
+        exclude: "setup.py"
+        types: [python]
+        # -e enables more verbose explainations of errors
+        args: ["-e", "--convention=numpy", "--add-ignore", "D100,D101,D102,D103,D104,D105,D106,D107"]
+
+
+-   repo: https://github.com/humitos/mirrors-autoflake
+    rev: master
+    hooks:
+    - id: autoflake
+      name: autoflake
+      description: "Runs autoflake over Python code"
+      entry: autoflake
+      language: python
+      language_version: python3
+      types: [python]
+      args: ["--in-place", "--remove-unused-variables", "--remove-all-unused-imports", "--remove-duplicate-keys"]
+
+
+-   repo: https://github.com/PyCQA/flake8
+    rev: master
+    hooks:
+    - id: flake8
+      name: flake8
+      description: "Runs flake8 over Python code"
+      entry: flake8
+      language: python
+      language_version: python3
+      types: [python]
+      # http://flake8.pycqa.org/en/latest/user/error-codes.html
+      # F631	assertion test is a tuple, which are always True
+      # F721	doctest syntax error
+      # F821	undefined name
+      # F822	undefined name in __all__
+      # F823	local variable name … referenced before assignment
+      # F901	raise NotImplemented should be raise NotImplementedError
+      # "We also report one extra error: E999. We report E999 when we fail to compile a file into an
+      #  Abstract Syntax Tree for the plugins that require it."
+      args: ["--select=F631,F721,F821,F822,F823,E901,E999"]
+
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: master
+    hooks:
+    - id: mypy
+      description: "Runs mypy over Python code"
+      args:
+      - "--disallow-untyped-defs"
+      - "--no-implicit-optional"
+      - "--ignore-missing-imports"
+      - "--warn-redundant-casts"
+      - "--warn-unused-ignores"
+      - "--show-error-context"
+
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+    -   id: check-json
