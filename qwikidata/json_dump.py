@@ -16,8 +16,8 @@ class WikidataJsonDump:
     Represents a json file from https://dumps.wikimedia.org/wikidatawiki/entities.
     File names are of the form "wikidata-YYYYMMDD-all.json[.bz2|.gz]".  The file is a single JSON
     array and there is one element (i.e. item or property) on each line with the first and
-    last lines being the opening and closing square brackets.  This class can handle the
-    compressed json.bz2/json.gz files or the uncompressed json files.
+    last lines being the opening and closing square brackets.  This class can handle bz2 or gz
+    compressed files as well as the uncompressed json files.
 
     Parameters
     ----------
@@ -31,10 +31,10 @@ class WikidataJsonDump:
 
         if filename.endswith(".json"):
             self.basename, _ = os.path.splitext(filename)
-            self.compressed = None
+            self.compression = None
         elif filename.endswith((".json.bz2", ".json.gz")):
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
-            self.compressed = os.path.splitext(filename)[1]
+            self.compression = os.path.splitext(filename)[1]
         else:
             raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
 
@@ -49,10 +49,10 @@ class WikidataJsonDump:
         to handle decoding in one place.
         """
 
-        if self.compressed == '.bz2':
+        if self.compression == ".bz2":
             with bz2.open(self.filename, mode="rb") as fp:
                 yield fp
-        elif self.compressed == '.gz':
+        elif self.compression == ".gz":
             with gzip.open(self.filename, mode="rb") as fp:
                 yield fp
         else:
@@ -88,8 +88,16 @@ class WikidataJsonDump:
                 fp.write("\n]\n")
             elif out_format == "jsonl":
                 fp.write("\n".join(out_lines))
-        args = ["bzip2", out_fname]
-        subprocess.check_output(args)
+
+        if self.compression == "bz2":
+            args = ["bzip2", out_fname]
+            subprocess.check_output(args)
+            out_fname = f"{out_fname}.bz2"
+        elif self.compression == "gz":
+            args = ["gzip", out_fname]
+            subprocess.check_output(args)
+            out_fname = f"{out_fname}.gz"
+
         out_lines = []
         ichunk += 1
         return out_lines, ichunk, out_fname
@@ -106,7 +114,7 @@ class WikidataJsonDump:
         Parameters
         ----------
         out_fbase: str
-          Each output file will have the form `{out_fbase}_ichunk_{ichunk}.(json|jsonl).bz2`
+          Each output file will have the form `{out_fbase}_ichunk_{ichunk}.(json|jsonl)[.bz2|.gz]`
         out_format: str
           One of ["json", "jsonl"].  If `json`, then each file is a valid json array
           (as in the original dump file).  If `jsonl`, then each file is in the
@@ -132,7 +140,7 @@ class WikidataJsonDump:
                 out_lines, ichunk, out_fname = self._write_chunk(
                     out_fbase, ichunk, out_format, out_lines
                 )
-                out_fnames.append(f"{out_fname}.bz2")
+                out_fnames.append(out_fname)
 
             if ichunk >= max_chunks:
                 return out_fnames
@@ -141,7 +149,7 @@ class WikidataJsonDump:
             out_lines, ichunk, out_fname = self._write_chunk(
                 out_fbase, ichunk, out_format, out_lines
             )
-            out_fnames.append(f"{out_fname}.bz2")
+            out_fnames.append(out_fname)
 
         return out_fnames
 
