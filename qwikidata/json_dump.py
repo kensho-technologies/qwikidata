@@ -33,7 +33,8 @@ class WikidataJsonDump:
             self.basename, _ = os.path.splitext(filename)
             self.compressed = None
         elif filename.endswith((".json.bz2", ".json.gz")):
-            self.basename, self.compressed = os.path.splitext(filename)
+            self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
+            self.compressed = os.path.splitext(filename)
         else:
             raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
 
