@@ -1,6 +1,7 @@
 # Copyright 2019 Kensho Technologies, LLC.
 """Module for Wikidata JSON dumps."""
 import bz2
+import gzip
 import json
 import logging
 import os
@@ -13,10 +14,10 @@ class WikidataJsonDump:
     """Class for Wikidata JSON dump files.
 
     Represents a json file from https://dumps.wikimedia.org/wikidatawiki/entities.
-    File names are of the form "wikidata-YYYYMMDD-all.json.bz2".  The file is a single JSON
+    File names are of the form "wikidata-YYYYMMDD-all.json[.bz2|.gz]".  The file is a single JSON
     array and there is one element (i.e. item or property) on each line with the first and
     last lines being the opening and closing square brackets.  This class can handle the
-    compressed json.bz2 files or the uncompressed json files.
+    compressed json.bz2/json.gz files or the uncompressed json files.
 
     Parameters
     ----------
@@ -30,13 +31,14 @@ class WikidataJsonDump:
 
         if filename.endswith(".json"):
             self.basename, _ = os.path.splitext(filename)
-        elif filename.endswith(".json.bz2"):
+            self.compressed = None
+        elif filename.endswith((".json.bz2", ".json.gz")):
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
+            self.compressed = os.path.splitext(filename)[1]
         else:
-            raise ValueError('filename must end with ".json.bz2" or ".json"')
+            raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
 
         self.filename = filename
-        self.compressed = filename.endswith("json.bz2")
         self.logger = logging.getLogger(__name__)
 
     @contextmanager
@@ -46,8 +48,12 @@ class WikidataJsonDump:
         It is important to open the file in binary mode even if it is not compressed. This allows us
         to handle decoding in one place.
         """
-        if self.compressed:
+
+        if self.compressed == '.bz2':
             with bz2.open(self.filename, mode="rb") as fp:
+                yield fp
+        elif self.compressed == '.gz':
+            with gzip.open(self.filename, mode="rb") as fp:
                 yield fp
         else:
             with open(self.filename, mode="rb") as fp:
