@@ -48,7 +48,6 @@ class WikidataJsonDump:
         It is important to open the file in binary mode even if it is not compressed. This allows us
         to handle decoding in one place.
         """
-
         if self.compression == ".bz2":
             with bz2.open(self.filename, mode="rb") as fp:
                 yield fp
