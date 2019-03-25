@@ -71,7 +71,7 @@ Copyright 2019 Kensho Technologies, LLC.
 
 
 .. |build-status| image:: https://img.shields.io/travis/kensho-technologies/qwikidata.svg?style=flat
-    :alt: build status
+    :alt: Build Status
     :scale: 100%
     :target: https://travis-ci.org/kensho-technologies/qwikidata
 
