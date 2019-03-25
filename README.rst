@@ -2,6 +2,8 @@
 Welcome
 =======
 
+|build-status| |docs|
+
 `qwikidata` is a Python package with tools that allow you to interact with Wikidata_.
 
 The package defines a set of classes that allow you to represent Wikidata entities
@@ -60,8 +62,18 @@ Licensed under the Apache 2.0 License. Unless required by applicable law or agre
 Copyright
 =========
 
-Copyright 2019 Kensho Technologies, Inc.
+Copyright 2019 Kensho Technologies, LLC.
 
+
+.. |build-status| image:: https://img.shields.io/travis/kensho-technologies/qwikidata.svg?style=flat
+    :alt: build status
+    :scale: 100%
+    :target: https://travis-ci.org/kensho-technologies/qwikidata
+
+.. |docs| image:: https://readthedocs.org/projects/qwikidata/badge/?version=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://qwikidata.readthedocs.io/en/latest/?badge=latest
 
 
 .. _Wikidata: https://www.wikidata.org/wiki/Wikidata:Main_Page
