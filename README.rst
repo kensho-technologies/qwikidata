@@ -18,10 +18,12 @@ in a Pythonic way.  It also provides a Pythonic way to access three data sources
 * `sparql query service`_
 * `json dump`_
 
-Full Documentation
-==================
+Important Links
+===============
 
-The full documentation for this project is hosted at https://qwikidata.readthedocs.io/en/latest/
+* documentation: https://qwikidata.rtfd.io/
+* PyPI: https://pypi.org/project/qwikidata/
+* github: https://github.com/kensho-technologies/qwikidata/
 
 Quick Install
 =============
