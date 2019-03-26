@@ -19,7 +19,7 @@ Each contributor is required to agree to our Contributor License Agreement, to e
 ## Guide
 
 
-To develop you can fork and checkout the repo.  Then you can pip install it for local development,
+To develop you should fork and clone the repo.  Then you can pip install it for local development,
 
 ```bash
 pip install -e ".[dev]"
