@@ -54,7 +54,7 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     install_requires=["mypy-extensions", "requests"],
     extras_require={
-        "dev": ["pre-commit", "pytest", "sphinx", "sphinx_rtd_theme", "sphinx_autodoc_typehints"]
+        "dev": ["pre-commit", "pytest", "pytest-cov", "sphinx", "sphinx_rtd_theme", "sphinx_autodoc_typehints"]
     },
     classifiers=[
         "Development Status :: 4 - Beta",
