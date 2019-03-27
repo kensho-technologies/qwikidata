@@ -32,9 +32,12 @@ class WikidataJsonDump:
         if filename.endswith(".json"):
             self.basename, _ = os.path.splitext(filename)
             self.compression = None
-        elif filename.endswith((".json.bz2", ".json.gz")):
+        elif filename.endswith(".json.bz2"):
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
-            self.compression = os.path.splitext(filename)[1]
+            self.compression = "bz2"
+        elif filename.endswith(".json.gz"):
+            self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
+            self.compression = "gz"
         else:
             raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
 
@@ -48,10 +51,10 @@ class WikidataJsonDump:
         It is important to open the file in binary mode even if it is not compressed. This allows us
         to handle decoding in one place.
         """
-        if self.compression == ".bz2":
+        if self.compression == "bz2":
             with bz2.open(self.filename, mode="rb") as fp:
                 yield fp
-        elif self.compression == ".gz":
+        elif self.compression == "gz":
             with gzip.open(self.filename, mode="rb") as fp:
                 yield fp
         else:
@@ -88,11 +91,11 @@ class WikidataJsonDump:
             elif out_format == "jsonl":
                 fp.write("\n".join(out_lines))
 
-        if self.compression == ".bz2":
+        if self.compression == "bz2":
             args = ["bzip2", out_fname]
             subprocess.check_output(args)
             out_fname = f"{out_fname}.bz2"
-        elif self.compression == ".gz":
+        elif self.compression == "gz":
             args = ["gzip", out_fname]
             subprocess.check_output(args)
             out_fname = f"{out_fname}.gz"
