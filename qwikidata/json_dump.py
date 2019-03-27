@@ -88,11 +88,11 @@ class WikidataJsonDump:
             elif out_format == "jsonl":
                 fp.write("\n".join(out_lines))
 
-        if self.compression == "bz2":
+        if self.compression == ".bz2":
             args = ["bzip2", out_fname]
             subprocess.check_output(args)
             out_fname = f"{out_fname}.bz2"
-        elif self.compression == "gz":
+        elif self.compression == ".gz":
             args = ["gzip", out_fname]
             subprocess.check_output(args)
             out_fname = f"{out_fname}.gz"
