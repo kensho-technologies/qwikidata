@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.1.2
+======
+
+**Fixed**:
+
+* Bug that prevented json dump file chunks from being compressed
+
 v0.1.1
 ======
 
