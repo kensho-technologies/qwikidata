@@ -2,6 +2,20 @@
 qwikidata Change Log
 ====================
 
+v0.1.4
+======
+
+**Fixed**:
+
+* Updated docs about module name change (`types` was renamed `typedefs`)
+
+v0.1.3
+======
+
+**Fixed**:
+
+* Module that was named `types` was renamed `typedefs`
+
 v0.1.2
 ======
 
