@@ -4,10 +4,10 @@
 import re
 from typing import Dict, Union
 
-from qwikidata import types
+from qwikidata import typedefs
 
 
-def _validate_datavalue_dict(datavalue_dict: types.DatavalueDict) -> None:
+def _validate_datavalue_dict(datavalue_dict: typedefs.DatavalueDict) -> None:
     """Raise excpetions if datavalue_dict is not valid."""
     _REQUIRED_KEYS = ["type", "value"]
     for req_key in _REQUIRED_KEYS:
@@ -58,7 +58,7 @@ class GlobeCoordinate:
       `globecoordinate`
     """
 
-    def __init__(self, datavalue_dict: types.GlobeCoordinateDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.GlobeCoordinateDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -90,7 +90,7 @@ class MonolingualText:
       `monolingualtext`
     """
 
-    def __init__(self, datavalue_dict: types.MonolingualTextDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.MonolingualTextDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -131,7 +131,7 @@ class Quantity:
       `quantity`
     """
 
-    def __init__(self, datavalue_dict: types.QuantityDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.QuantityDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -152,7 +152,7 @@ class String:
       `string`
     """
 
-    def __init__(self, datavalue_dict: types.StringDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.StringDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -225,7 +225,7 @@ class Time:
       `time`
     """
 
-    def __init__(self, datavalue_dict: types.TimeDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.TimeDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -295,7 +295,7 @@ class WikibaseEntityId:
       `wikibase-entityid`
     """
 
-    def __init__(self, datavalue_dict: types.WikibaseEntityIdDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.WikibaseEntityIdDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -319,7 +319,7 @@ class WikibaseUnmappedEntityId:
       `wikibase-unmapped-entityid`
     """
 
-    def __init__(self, datavalue_dict: types.WikibaseUnmappedEntityIdDatavalueDict) -> None:
+    def __init__(self, datavalue_dict: typedefs.WikibaseUnmappedEntityIdDatavalueDict) -> None:
         _validate_datavalue_dict(datavalue_dict)
         self._datavalue_dict = datavalue_dict
         self.datatype = datavalue_dict["type"]
@@ -351,7 +351,7 @@ WikidataDatavalue = Union[
 ]
 
 
-def get_datavalue_from_snak_dict(snak_dict: types.SnakDict) -> Union[WikidataDatavalue, None]:
+def get_datavalue_from_snak_dict(snak_dict: typedefs.SnakDict) -> Union[WikidataDatavalue, None]:
     """Return a Wikidata Datavalue from a snak dictionary."""
     if snak_dict["snaktype"] == "value":
         datavalue_class = _DATAVALUE_TYPE_TO_CLASS[str(snak_dict["datavalue"]["type"])]

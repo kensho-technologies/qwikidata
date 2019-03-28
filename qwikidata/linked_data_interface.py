@@ -3,7 +3,7 @@
 import logging
 
 import requests
-from qwikidata import types
+from qwikidata import typedefs
 
 logger = logging.getLogger(__name__)
 WIKIDATA_LDI_URL = "https://www.wikidata.org/wiki/Special:EntityData"
@@ -19,8 +19,8 @@ class InvalidEntityId(Exception):
 
 
 def get_entity_dict_from_api(
-    entity_id: types.EntityId, base_url: str = WIKIDATA_LDI_URL
-) -> types.EntityDict:
+    entity_id: typedefs.EntityId, base_url: str = WIKIDATA_LDI_URL
+) -> typedefs.EntityDict:
     """Get a dictionary representing a wikidata entity from the linked data interface API.
 
     https://www.wikidata.org/wiki/Wikidata:Data_access#Linked_Data_interface
