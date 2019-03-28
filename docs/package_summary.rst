@@ -12,4 +12,4 @@ Package Summary
    qwikidata.entity
    qwikidata.linked_data_interface
    qwikidata.sparql
-   qwikidata.types
+   qwikidata.typedefs
