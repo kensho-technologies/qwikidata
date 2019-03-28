@@ -3,7 +3,7 @@
 
 from typing import Dict, List, Union
 
-from qwikidata import types
+from qwikidata import typedefs
 from qwikidata.claim import WikidataClaimGroup
 
 
@@ -19,7 +19,7 @@ class EntityMixin:
     """
 
     @staticmethod
-    def _validate_entity_dict(entity_dict: types.EntityDict) -> None:
+    def _validate_entity_dict(entity_dict: typedefs.EntityDict) -> None:
         """Raise excpetions if entity_dict is not valid."""
         _REQUIRED_KEYS = ["id", "type"]
         if not isinstance(entity_dict, dict):
@@ -42,11 +42,11 @@ class LabelDescriptionAliasMixin:
 
     """
 
-    _entity_dict: types.EntityDict
+    _entity_dict: typedefs.EntityDict
 
     @staticmethod
     def _validate_label_desc_alias_dict(
-        label_desc_alias_dict: Union[types.ItemDict, types.PropertyDict]
+        label_desc_alias_dict: Union[typedefs.ItemDict, typedefs.PropertyDict]
     ) -> None:
         """Raise excpetions if label_desc_alias_dict is not valid."""
         _REQUIRED_KEYS = ["labels", "descriptions", "aliases"]
@@ -57,7 +57,7 @@ class LabelDescriptionAliasMixin:
                     f"only found {list(label_desc_alias_dict.keys())}"
                 )
 
-    def get_label(self, lang: types.LanguageCode = types.LanguageCode("en")) -> str:
+    def get_label(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
         """Get label (primary name for this entity) in a specific language.
 
         See: https://www.wikidata.org/wiki/Help:Label
@@ -72,7 +72,7 @@ class LabelDescriptionAliasMixin:
         else:
             return ""
 
-    def get_description(self, lang: types.LanguageCode = types.LanguageCode("en")) -> str:
+    def get_description(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
         """Get a brief description of this entity in a specific language.
 
         See: https://www.wikidata.org/wiki/Help:Description
@@ -90,7 +90,7 @@ class LabelDescriptionAliasMixin:
         else:
             return ""
 
-    def get_aliases(self, lang: types.LanguageCode = types.LanguageCode("en")) -> List[str]:
+    def get_aliases(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> List[str]:
         """Get alternative names for this entity in a specific language.
 
         See: https://www.wikidata.org/wiki/Help:Aliases
@@ -120,10 +120,10 @@ class ClaimsMixin:
         * :py:class:`WikidataSense`
     """
 
-    _entity_dict: types.EntityDict
+    _entity_dict: typedefs.EntityDict
 
     @staticmethod
-    def _validate_claim_dict(claim_dict: types.EntityDict) -> None:
+    def _validate_claim_dict(claim_dict: typedefs.EntityDict) -> None:
         """Raise excpetions if claim_dict is not valid."""
         _REQUIRED_KEYS = ["claims"]
         for req_key in _REQUIRED_KEYS:
@@ -133,7 +133,7 @@ class ClaimsMixin:
                     f"only found {list(claim_dict.keys())}"
                 )
 
-    def get_claim_groups(self) -> Dict[types.PropertyId, WikidataClaimGroup]:
+    def get_claim_groups(self) -> Dict[typedefs.PropertyId, WikidataClaimGroup]:
         """Get all claim groups about this entity."""
         if isinstance(self._entity_dict["claims"], dict):
             claims = {
@@ -144,7 +144,7 @@ class ClaimsMixin:
         else:
             return {}
 
-    def get_claim_group(self, property_id: types.PropertyId) -> WikidataClaimGroup:
+    def get_claim_group(self, property_id: typedefs.PropertyId) -> WikidataClaimGroup:
         """Get the claim group corresponding to a given property id.
 
         Parameters
@@ -161,7 +161,7 @@ class ClaimsMixin:
         else:
             return WikidataClaimGroup(claim_list)
 
-    def get_truthy_claim_groups(self) -> Dict[types.PropertyId, WikidataClaimGroup]:
+    def get_truthy_claim_groups(self) -> Dict[typedefs.PropertyId, WikidataClaimGroup]:
         """Get all truthy claim groups about this entity.
 
         Truthy is defined in the Wikidata RDF dump format docs,
@@ -185,7 +185,7 @@ class ClaimsMixin:
         else:
             return {}
 
-    def get_truthy_claim_group(self, property_id: types.PropertyId) -> WikidataClaimGroup:
+    def get_truthy_claim_group(self, property_id: typedefs.PropertyId) -> WikidataClaimGroup:
         """Get truthy claims from the claim group corresponding to a given property id.
 
         Truthy is defined in the Wikidata RDF dump format docs,
@@ -247,13 +247,13 @@ class WikidataItem(LabelDescriptionAliasMixin, ClaimsMixin, EntityMixin):
     .. _the wikibase JSON data model docs: https://www.mediawiki.org/wiki/Wikibase/DataModel/JSON
     """
 
-    def __init__(self, item_dict: types.ItemDict) -> None:
+    def __init__(self, item_dict: typedefs.ItemDict) -> None:
         self._validate_item_dict(item_dict)
         self._entity_dict = item_dict
         self.entity_id = item_dict["id"]
         self.entity_type = item_dict["type"]
 
-    def _validate_item_dict(self, item_dict: types.ItemDict) -> None:
+    def _validate_item_dict(self, item_dict: typedefs.ItemDict) -> None:
         """Raise excpetions if item_dict is not valid."""
         self._validate_entity_dict(item_dict)
         if item_dict["type"] != "item":
@@ -261,7 +261,7 @@ class WikidataItem(LabelDescriptionAliasMixin, ClaimsMixin, EntityMixin):
         self._validate_label_desc_alias_dict(item_dict)
         self._validate_claim_dict(item_dict)
 
-    def get_sitelinks(self, prefix: str = "enwiki") -> Dict[str, types.SitelinkDict]:
+    def get_sitelinks(self, prefix: str = "enwiki") -> Dict[str, typedefs.SitelinkDict]:
         """Get Wikimedia sitelinks for this item.
 
         Parameters
@@ -330,13 +330,13 @@ class WikidataProperty(LabelDescriptionAliasMixin, ClaimsMixin, EntityMixin):
     .. _the wikibase JSON data model docs: https://www.mediawiki.org/wiki/Wikibase/DataModel/JSON
     """
 
-    def __init__(self, property_dict: types.PropertyDict) -> None:
+    def __init__(self, property_dict: typedefs.PropertyDict) -> None:
         self._validate_property_dict(property_dict)
         self._entity_dict = property_dict
         self.entity_id = property_dict["id"]
         self.entity_type = property_dict["type"]
 
-    def _validate_property_dict(self, property_dict: types.PropertyDict) -> None:
+    def _validate_property_dict(self, property_dict: typedefs.PropertyDict) -> None:
         """Raise excpetions if property_dict is not valid."""
         self._validate_entity_dict(property_dict)
         if property_dict["type"] != "property":
@@ -382,14 +382,14 @@ class WikidataForm(ClaimsMixin):
       List of item ids representing grammatical categories (e.g. present tense, first person, ...)
     """
 
-    def __init__(self, form_dict: types.FormDict) -> None:
+    def __init__(self, form_dict: typedefs.FormDict) -> None:
         self._validate_form_dict(form_dict)
         self._form_dict = form_dict
 
         self.form_id = form_dict["id"]
         self.grammatical_features = form_dict["grammaticalFeatures"]
 
-    def _validate_form_dict(self, form_dict: types.FormDict) -> None:
+    def _validate_form_dict(self, form_dict: typedefs.FormDict) -> None:
         """Raise excpetions if form_dict is not valid."""
         _REQUIRED_KEYS = ["id", "representations", "grammaticalFeatures", "claims"]
         for req_key in _REQUIRED_KEYS:
@@ -399,7 +399,7 @@ class WikidataForm(ClaimsMixin):
                     f"only found {list(form_dict.keys())}"
                 )
 
-    def get_representation(self, lang: types.LanguageCode = types.LanguageCode("en")) -> str:
+    def get_representation(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
         """Get representation of this form in a given language.
 
         See: https://www.mediawiki.org/wiki/Extension:WikibaseLexeme/Data_Model#Representation
@@ -449,13 +449,13 @@ class WikidataSense(ClaimsMixin):
       Unique id for this sense (e.g. 'L3354-S1')
     """
 
-    def __init__(self, sense_dict: types.SenseDict) -> None:
+    def __init__(self, sense_dict: typedefs.SenseDict) -> None:
         self._validate_sense_dict(sense_dict)
         self._sense_dict = sense_dict
 
         self.sense_id = sense_dict["id"]
 
-    def _validate_sense_dict(self, sense_dict: types.SenseDict) -> None:
+    def _validate_sense_dict(self, sense_dict: typedefs.SenseDict) -> None:
         """Raise excpetions if sense_dict is not valid."""
         _REQUIRED_KEYS = ["id", "glosses", "claims"]
         for req_key in _REQUIRED_KEYS:
@@ -465,7 +465,7 @@ class WikidataSense(ClaimsMixin):
                     f"only found {list(sense_dict.keys())}"
                 )
 
-    def get_gloss(self, lang: types.LanguageCode = types.LanguageCode("en")) -> str:
+    def get_gloss(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
         """Get gloss of this sense in a given language.
 
         See: https://www.mediawiki.org/wiki/Extension:WikibaseLexeme/Data_Model#Gloss
@@ -514,15 +514,15 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
     .. _the wikibase Lexeme JSON data model docs: https://www.mediawiki.org/wiki/Extension:WikibaseLexeme/Data_Model
     """
 
-    def __init__(self, lexeme_dict: types.LexemeDict) -> None:
+    def __init__(self, lexeme_dict: typedefs.LexemeDict) -> None:
         self._validate_lexeme_dict(lexeme_dict)
-        self._entity_dict: types.LexemeDict = lexeme_dict
+        self._entity_dict: typedefs.LexemeDict = lexeme_dict
         self.entity_id = lexeme_dict["id"]
         self.entity_type = lexeme_dict["type"]
         self.language = lexeme_dict["language"]
         self.lexical_category = lexeme_dict["lexicalCategory"]
 
-    def _validate_lexeme_dict(self, lexeme_dict: types.LexemeDict) -> None:
+    def _validate_lexeme_dict(self, lexeme_dict: typedefs.LexemeDict) -> None:
         """Raise excpetions if lexeme_dict is not valid."""
         self._validate_entity_dict(lexeme_dict)
         if lexeme_dict["type"] != "lexeme":
@@ -540,7 +540,7 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
                     f"only found {list(lexeme_dict.keys())}"
                 )
 
-    def get_lemma(self, lang: types.LanguageCode = types.LanguageCode("en")) -> str:
+    def get_lemma(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
         """Get lemma (primary name for this lexeme) in a specific language.
 
         See: https://www.mediawiki.org/wiki/Extension:WikibaseLexeme/Data_Model#Lemma

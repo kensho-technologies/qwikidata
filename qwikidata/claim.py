@@ -5,7 +5,7 @@ from collections import OrderedDict
 from collections.abc import Sequence
 from typing import List, Union, overload
 
-from qwikidata import types as types
+from qwikidata import typedefs
 from qwikidata.snak import WikidataSnak
 
 
@@ -38,7 +38,7 @@ class WikidataReference:
       Maps property id to list of :py:class:`.WikidataSnak`
     """
 
-    def __init__(self, reference_dict: types.ReferenceDict) -> None:
+    def __init__(self, reference_dict: typedefs.ReferenceDict) -> None:
         self._validate_reference_dict(reference_dict)
         self._reference_dict = reference_dict
 
@@ -49,7 +49,7 @@ class WikidataReference:
                 WikidataSnak(snak_dict) for snak_dict in reference_dict["snaks"][property_id]
             ]
 
-    def _validate_reference_dict(self, reference_dict: types.ReferenceDict) -> None:
+    def _validate_reference_dict(self, reference_dict: typedefs.ReferenceDict) -> None:
         """Raise excpetions if reference_dict is not valid."""
         _REQUIRED_KEYS = ["hash", "snaks", "snaks-order"]
         for req_key in _REQUIRED_KEYS:
@@ -96,14 +96,14 @@ class WikidataQualifier:
 
     """
 
-    def __init__(self, qualifier_dict: types.QualifierDict) -> None:
+    def __init__(self, qualifier_dict: typedefs.QualifierDict) -> None:
         self._validate_qualifier_dict(qualifier_dict)
         self._qualifier_dict = qualifier_dict
 
         self.qualifierhash = qualifier_dict["hash"]
         self.snak = WikidataSnak(qualifier_dict)
 
-    def _validate_qualifier_dict(self, qualifier_dict: types.QualifierDict) -> None:
+    def _validate_qualifier_dict(self, qualifier_dict: typedefs.QualifierDict) -> None:
         """Raise excpetions if qualifier_dict is not valid."""
         _REQUIRED_KEYS = ["hash", "snaktype", "property", "datavalue", "datatype"]
         for req_key in _REQUIRED_KEYS:
@@ -176,12 +176,12 @@ class WikidataClaim:
     .. _the wikibase JSON data model docs: https://www.mediawiki.org/wiki/Wikibase/DataModel/JSON
     """
 
-    def __init__(self, claim_dict: types.ClaimDict) -> None:
+    def __init__(self, claim_dict: typedefs.ClaimDict) -> None:
         self._validate_claim_dict(claim_dict)
         self._claim_dict = claim_dict
         self.property_id = self.mainsnak.property_id
 
-        self.qualifiers: OrderedDict[types.PropertyId, List[WikidataQualifier]] = OrderedDict()
+        self.qualifiers: OrderedDict[typedefs.PropertyId, List[WikidataQualifier]] = OrderedDict()
         self.qualifiers_order = claim_dict.get("qualifiers-order", [])
         if "qualifiers" in claim_dict:
             for property_id in self.qualifiers_order:
@@ -193,7 +193,7 @@ class WikidataClaim:
             for reference_dict in claim_dict["references"]:
                 self.references.append(WikidataReference(reference_dict))
 
-    def _validate_claim_dict(self, claim_dict: types.ClaimDict) -> None:
+    def _validate_claim_dict(self, claim_dict: typedefs.ClaimDict) -> None:
         """Raise excpetions if claim_dict is not valid."""
         _REQUIRED_KEYS = ["id", "type", "rank", "mainsnak"]
         for req_key in _REQUIRED_KEYS:
@@ -236,14 +236,14 @@ class WikidataClaimGroup(Sequence):
     .. _the wikibase JSON data model docs: https://www.mediawiki.org/wiki/Wikibase/DataModel/JSON
     """
 
-    def __init__(self, claim_list: types.ClaimList) -> None:
+    def __init__(self, claim_list: typedefs.ClaimList) -> None:
         super(WikidataClaimGroup, self).__init__()
         self._validate_claim_list(claim_list)
         self._claim_list = claim_list
         self._claims = [WikidataClaim(claim_dict) for claim_dict in claim_list]
 
         property_ids = set([claim.mainsnak.property_id for claim in self._claims])
-        self.property_id: Union[types.PropertyId, None]
+        self.property_id: Union[typedefs.PropertyId, None]
         if len(property_ids) == 1:
             self.property_id = property_ids.pop()
         elif len(property_ids) == 0:
@@ -254,7 +254,7 @@ class WikidataClaimGroup(Sequence):
                 f"but found multiple property ids {property_ids}"
             )
 
-    def _validate_claim_list(self, claim_list: types.ClaimList) -> None:
+    def _validate_claim_list(self, claim_list: typedefs.ClaimList) -> None:
         """Raise excpetions if claim_list is not valid."""
         if not isinstance(claim_list, list):
             raise TypeError(f"claim_list must be a list but got {type(claim_list)}.")

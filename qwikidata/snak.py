@@ -3,7 +3,7 @@
 
 from typing import Union
 
-from qwikidata import types
+from qwikidata import typedefs
 from qwikidata.datavalue import WikidataDatavalue, get_datavalue_from_snak_dict
 
 
@@ -53,11 +53,11 @@ class WikidataSnak:
     .. _the wikibase JSON data model docs: https://www.mediawiki.org/wiki/Wikibase/DataModel/JSON
     """
 
-    def __init__(self, snak_dict: types.SnakDict) -> None:
+    def __init__(self, snak_dict: typedefs.SnakDict) -> None:
         self._validate_snak_dict(snak_dict)
         self._snak_dict = snak_dict
 
-    def _validate_snak_dict(self, snak_dict: types.SnakDict) -> None:
+    def _validate_snak_dict(self, snak_dict: typedefs.SnakDict) -> None:
         """Raise excpetions if snak_dict is not valid."""
         _REQUIRED_KEYS = ["snaktype", "property"]
         for req_key in _REQUIRED_KEYS:
