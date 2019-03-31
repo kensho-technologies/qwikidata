@@ -105,7 +105,7 @@ class WikidataQualifier:
 
     def _validate_qualifier_dict(self, qualifier_dict: typedefs.QualifierDict) -> None:
         """Raise excpetions if qualifier_dict is not valid."""
-        _REQUIRED_KEYS = ["hash", "snaktype", "property", "datavalue", "datatype"]
+        _REQUIRED_KEYS = ["hash", "snaktype", "property", "datatype"]
         for req_key in _REQUIRED_KEYS:
             if req_key not in qualifier_dict:
                 raise ValueError(
