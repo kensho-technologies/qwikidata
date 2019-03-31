@@ -17,7 +17,7 @@ class WikidataJsonDump:
     File names are of the form "wikidata-YYYYMMDD-all.json[.bz2|.gz]".  The file is a single JSON
     array and there is one element (i.e. item or property) on each line with the first and
     last lines being the opening and closing square brackets.  This class can handle bz2 or gz
-    compressed files as well as the uncompressed json files.
+    compressed files as well as the uncompressed json files and jsonl chunks.
 
     Parameters
     ----------
@@ -29,17 +29,17 @@ class WikidataJsonDump:
         if not isinstance(filename, str):
             raise ValueError("filename must be a string")
 
-        if filename.endswith(".json"):
+        if filename.endswith(".json") | filename.endswith(".jsonl"):
             self.basename, _ = os.path.splitext(filename)
             self.compression = None
-        elif filename.endswith(".json.bz2"):
+        elif filename.endswith(".json.bz2") | filename.endswith(".jsonl.bz2"):
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
             self.compression = "bz2"
-        elif filename.endswith(".json.gz"):
+        elif filename.endswith(".json.gz") | filename.endswith(".jsonl.gz"):
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
             self.compression = "gz"
         else:
-            raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
+            raise ValueError('filename must end with ".json[l].bz2" or ".json[l].gz" or ".json[l]"')
 
         self.filename = filename
         self.logger = logging.getLogger(__name__)
