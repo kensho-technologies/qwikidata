@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.1.5
+======
+
+**Fixed**:
+
+* Bug that required `datavalue` field in Qualifiers even if `snaktype` is `somevalue` or `novalue`.
+
 v0.1.4
 ======
 
