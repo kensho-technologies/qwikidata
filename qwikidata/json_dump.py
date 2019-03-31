@@ -77,19 +77,16 @@ class WikidataJsonDump:
             yield json.loads(line_str)
 
     def _write_chunk(
-        self, out_fbase: str, ichunk: int, out_format: str, out_lines: List[str]
+        self, out_fbase: str, ichunk: int, out_lines: List[str]
     ) -> Tuple[List[str], int, str]:
         """Write a single chunk to disk."""
-        out_fname = f"{out_fbase}-ichunk_{ichunk}.{out_format}"
+        out_fname = f"{out_fbase}-ichunk_{ichunk}.json"
         self.logger.debug(f"writing {out_fname}")
         out_lines = [out_line.rstrip(",\n") for out_line in out_lines]
         with open(out_fname, "w") as fp:
-            if out_format == "json":
-                fp.write("[\n")
-                fp.write(",\n".join(out_lines))
-                fp.write("\n]\n")
-            elif out_format == "jsonl":
-                fp.write("\n".join(out_lines))
+            fp.write("[\n")
+            fp.write(",\n".join(out_lines))
+            fp.write("\n]\n")
 
         if self.compression == "bz2":
             args = ["bzip2", out_fname]
@@ -107,7 +104,6 @@ class WikidataJsonDump:
     def create_chunks(
         self,
         out_fbase: Optional[str] = None,
-        out_format: str = "json",
         num_lines_per_chunk: int = 100,
         max_chunks: int = 10 ** 10,
     ) -> List[str]:
@@ -116,11 +112,7 @@ class WikidataJsonDump:
         Parameters
         ----------
         out_fbase: str
-          Each output file will have the form `{out_fbase}_ichunk_{ichunk}.(json|jsonl)[.bz2|.gz]`
-        out_format: str
-          One of ["json", "jsonl"].  If `json`, then each file is a valid json array
-          (as in the original dump file).  If `jsonl`, then each file is in the
-          "JSON Lines" format (http://jsonlines.org/).
+          Each output file will have the form `{out_fbase}_ichunk_{ichunk}.json[.bz2|.gz]`
         num_lines_per_chunk: int
           Number of lines per chunk file
         max_chunks: int
@@ -139,18 +131,14 @@ class WikidataJsonDump:
                 continue
             out_lines.append(line)
             if len(out_lines) >= num_lines_per_chunk:
-                out_lines, ichunk, out_fname = self._write_chunk(
-                    out_fbase, ichunk, out_format, out_lines
-                )
+                out_lines, ichunk, out_fname = self._write_chunk(out_fbase, ichunk, out_lines)
                 out_fnames.append(out_fname)
 
             if ichunk >= max_chunks:
                 return out_fnames
 
         if len(out_lines) > 0:
-            out_lines, ichunk, out_fname = self._write_chunk(
-                out_fbase, ichunk, out_format, out_lines
-            )
+            out_lines, ichunk, out_fname = self._write_chunk(out_fbase, ichunk, out_lines)
             out_fnames.append(out_fname)
 
         return out_fnames

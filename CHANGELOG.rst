@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.2.0
+======
+
+**Removed**:
+
+* Jsonl output support from `WikidataJsonDump` class so that chunks produced by the class can always be read by the class.
+
 v0.1.5
 ======
 
