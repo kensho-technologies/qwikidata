@@ -418,7 +418,7 @@ class WikidataForm(ClaimsMixin):
             return ""
 
     def __str__(self) -> str:
-        return f"WikidataForm(form_id={self.form_id}, representation={self.get_representation()}, grammatical_features={self.grammatical_features}"
+        return f"WikidataForm(form_id={self.form_id}, representation={self.get_representation()}, grammatical_features={self.grammatical_features})"
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -481,7 +481,7 @@ class WikidataSense(ClaimsMixin):
             return ""
 
     def __str__(self) -> str:
-        return f"WikidataSense(sense_id={self.sense_id}, gloss={self.get_gloss()}"
+        return f"WikidataSense(sense_id={self.sense_id}, gloss={self.get_gloss()})"
 
     def __repr__(self) -> str:
         return self.__str__()
