@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.2.1
+======
+
+**Fixed**:
+
+* typo in string representation of WikidataForm and WikidataSense.
+
 v0.2.0
 ======
 
