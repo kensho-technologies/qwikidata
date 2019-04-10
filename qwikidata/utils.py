@@ -16,6 +16,15 @@ def pairwise(iterable: Iterable) -> Iterator[Tuple]:
 
 
 def dump_entities_to_json(entities: Iterable[WikidataEntity], out_fname: str) -> None:
+    """Write entities to JSON file.
+
+    Parameters
+    ----------
+    entities
+      An iterable of instances of WikidataEntity
+    out_fname
+      Output file name
+    """
     with open(out_fname, "w") as fp:
         fp.write("[\n")
         for ent_lo, ent_hi in pairwise(entities):
