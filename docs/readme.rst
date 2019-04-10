@@ -18,12 +18,6 @@ in a Pythonic way.  It also provides a Pythonic way to access three data sources
 * `sparql query service`_
 * `json dump`_
 
-Important Links
-===============
-
-* documentation: https://qwikidata.rtfd.io/
-* PyPI: https://pypi.org/project/qwikidata/
-* github: https://github.com/kensho-technologies/qwikidata/
 
 Quick Install
 =============
@@ -65,16 +59,22 @@ JSON Dump
 .. literalinclude:: ../examples/basic_json_dump.py
 
 
-
 License
 =======
 
 Licensed under the Apache 2.0 License. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
+
 Copyright
 =========
 
 Copyright 2019 Kensho Technologies, LLC.
+
+
+Important Links
+===============
+
+`readthedocs`_ | `PyPI`_ | `github`_
 
 
 .. |build-status| image:: https://img.shields.io/travis/kensho-technologies/qwikidata.svg?style=flat
@@ -107,3 +107,6 @@ Copyright 2019 Kensho Technologies, LLC.
 .. _linked data interface: https://www.wikidata.org/wiki/Wikidata:Data_access
 .. _sparql query service: https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
 .. _json dump: https://www.wikidata.org/wiki/Wikidata:Database_download
+.. _readthedocs: https://qwikidata.readthedocs.io/en/stable/readme.html
+.. _PyPI: https://pypi.org/project/qwikidata/
+.. _github: https://github.com/kensho-technologies/qwikidata/
