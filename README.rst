@@ -46,23 +46,13 @@ You can install the most recent version using pip,
 Quick Examples
 ==============
 
+Please see the,
 
-Linked Data Interface
----------------------
+* `examples folder`_
 
-.. literalinclude:: ../examples/basic_linked_data_interface.py
+OR
 
-
-SPARQL Query Service
---------------------
-
-.. literalinclude:: ../examples/basic_sparql_query_service.py
-
-
-JSON Dump
----------
-
-.. literalinclude:: ../examples/basic_json_dump.py
+* `readthedocs`_
 
 
 
@@ -107,3 +97,5 @@ Copyright 2019 Kensho Technologies, LLC.
 .. _linked data interface: https://www.wikidata.org/wiki/Wikidata:Data_access
 .. _sparql query service: https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
 .. _json dump: https://www.wikidata.org/wiki/Wikidata:Database_download
+.. _examples folder: https://github.com/kensho-technologies/qwikidata/tree/master/examples
+.. _readthedocs: https://qwikidata.readthedocs.io/en/stable/readme.html
