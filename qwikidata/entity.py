@@ -575,3 +575,6 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
 
     def __repr__(self) -> str:
         return self.__str__()
+
+
+WikidataEntity = Union[WikidataItem, WikidataProperty, WikidataLexeme]

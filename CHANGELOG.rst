@@ -2,6 +2,14 @@
 qwikidata Change Log
 ====================
 
+v0.3.0
+======
+
+**Added**:
+
+* utility module with dump_entities_to_json function
+* example directory referenced from README
+
 v0.2.1
 ======
 
