@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.3.1
+======
+
+**Fixed**:
+
+* rendering issues due to linked README.rst and docs/readme.rst
+
 v0.3.0
 ======
 
