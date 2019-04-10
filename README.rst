@@ -43,22 +43,27 @@ You can install the most recent version using pip,
   pip install qwikidata
 
 
-Quick Start
-===========
+Quick Examples
+==============
 
-.. code-block:: python
 
-  from qwikidata.linked_data_interface import get_entity_dict_from_api
-  from qwikidata.entity import WikidataItem, WikidataProperty, WikidataLexeme
+Linked Data Interface
+---------------------
 
-  q42_dict = get_entity_dict_from_api('Q42')
-  q42 = WikidataItem(q42_dict)
+.. literalinclude:: ../examples/basic_linked_data_interface.py
 
-  p279_dict = get_entity_dict_from_api('P279')
-  p279 = WikidataProperty(p279_dict)
 
-  l3_dict = get_entity_dict_from_api('L3')
-  l3 = WikidataLexeme(l3_dict)
+SPARQL Query Service
+--------------------
+
+.. literalinclude:: ../examples/basic_sparql_query_service.py
+
+
+JSON Dump
+---------
+
+.. literalinclude:: ../examples/basic_json_dump.py
+
 
 
 License
