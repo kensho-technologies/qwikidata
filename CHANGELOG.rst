@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.3.2
+======
+
+**Fixed**:
+
+* moved important links to bottom of documentation to let examples shine
+
 v0.3.1
 ======
 
