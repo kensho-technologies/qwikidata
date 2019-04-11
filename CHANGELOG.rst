@@ -2,6 +2,13 @@
 qwikidata Change Log
 ====================
 
+v0.4.0
+======
+
+**Added**:
+
+* support for Python 3.5
+
 v0.3.2
 ======
 
