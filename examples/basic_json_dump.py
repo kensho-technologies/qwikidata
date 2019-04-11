@@ -46,7 +46,7 @@ for ii, entity_dict in enumerate(wjd):
             )
         )
 
-    if ii > 10_000:
+    if ii > 10000:
         break
 
 # write the iterable of WikidataItem to disk as JSON
