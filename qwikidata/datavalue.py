@@ -13,8 +13,9 @@ def _validate_datavalue_dict(datavalue_dict: typedefs.DatavalueDict) -> None:
     for req_key in _REQUIRED_KEYS:
         if req_key not in datavalue_dict:
             raise ValueError(
-                f"required datavalue_dict keys are {_REQUIRED_KEYS}. "
-                f"only found {list(datavalue_dict.keys())}"
+                "required datavalue_dict keys are {} but only found {}".format(
+                    _REQUIRED_KEYS, list(datavalue_dict.keys())
+                )
             )
 
     _VALID_TYPES = frozenset(
@@ -30,8 +31,9 @@ def _validate_datavalue_dict(datavalue_dict: typedefs.DatavalueDict) -> None:
     )
     if datavalue_dict["type"] not in _VALID_TYPES:
         raise ValueError(
-            f"datavalue datatype={datavalue_dict['type']} not in "
-            f"valid datatypes {_VALID_TYPES}."
+            "datavalue datatype={} not in valid datatypes {}.".format(
+                datavalue_dict["type"], _VALID_TYPES
+            )
         )
 
 
@@ -261,7 +263,7 @@ class Time:
         dict
             a dictionary representing the timestring's year, month, and date
         """
-        datetime_dict: Dict[str, int] = {}
+        datetime_dict = {}  # type: Dict[str, int]
         timestring = self.value["time"]
         match = self.STANDARD_DATE_REGEX.fullmatch(timestring)
         if match:
@@ -360,6 +362,7 @@ def get_datavalue_from_snak_dict(snak_dict: typedefs.SnakDict) -> Union[Wikidata
         return None
     else:
         raise ValueError(
-            f'snaktype must be one of ["value", "somevalue", "novalue"] '
-            f"but got {snak_dict['snaktype']}"
+            'snaktype must be one of ["value", "somevalue", "novalue"] but got {}.'.format(
+                snak_dict["snaktype"]
+            )
         )

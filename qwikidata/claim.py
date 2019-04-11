@@ -43,7 +43,7 @@ class WikidataReference:
         self._reference_dict = reference_dict
 
         self.referencehash = reference_dict["hash"]
-        self.snaks: OrderedDict = OrderedDict()
+        self.snaks = OrderedDict()  # type: OrderedDict
         for property_id in reference_dict["snaks-order"]:
             self.snaks[property_id] = [
                 WikidataSnak(snak_dict) for snak_dict in reference_dict["snaks"][property_id]
@@ -55,12 +55,13 @@ class WikidataReference:
         for req_key in _REQUIRED_KEYS:
             if req_key not in reference_dict:
                 raise ValueError(
-                    f"required reference_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(reference_dict.keys())}"
+                    "required reference_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(reference_dict.keys())
+                    )
                 )
 
     def __str__(self) -> str:
-        return f"WikidataReference(hash={self.referencehash}, snaks={self.snaks})"
+        return "WikidataReference(hash={}, snaks={})".format(self.referencehash, self.snaks)
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -109,12 +110,13 @@ class WikidataQualifier:
         for req_key in _REQUIRED_KEYS:
             if req_key not in qualifier_dict:
                 raise ValueError(
-                    f"required qualifier_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(qualifier_dict.keys())}"
+                    "required qualifier_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(qualifier_dict.keys())
+                    )
                 )
 
     def __str__(self) -> str:
-        return f"WikidataQualifier(hash={self.qualifierhash}, snak={self.snak})"
+        return "WikidataQualifier(hash={}, snak={})".format(self.qualifierhash, self.snak)
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -181,14 +183,16 @@ class WikidataClaim:
         self._claim_dict = claim_dict
         self.property_id = self.mainsnak.property_id
 
-        self.qualifiers: OrderedDict[typedefs.PropertyId, List[WikidataQualifier]] = OrderedDict()
+        self.qualifiers = (
+            OrderedDict()
+        )  # type: OrderedDict[typedefs.PropertyId, List[WikidataQualifier]]
         self.qualifiers_order = claim_dict.get("qualifiers-order", [])
         if "qualifiers" in claim_dict:
             for property_id in self.qualifiers_order:
                 qualifier_dicts = claim_dict["qualifiers"][property_id]
                 self.qualifiers[property_id] = [WikidataQualifier(qd) for qd in qualifier_dicts]
 
-        self.references: List[WikidataReference] = []
+        self.references = []  # type: List[WikidataReference]
         if "references" in claim_dict:
             for reference_dict in claim_dict["references"]:
                 self.references.append(WikidataReference(reference_dict))
@@ -199,8 +203,9 @@ class WikidataClaim:
         for req_key in _REQUIRED_KEYS:
             if req_key not in claim_dict:
                 raise ValueError(
-                    f"required claim_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(claim_dict.keys())}"
+                    "required claim_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(claim_dict.keys())
+                    )
                 )
         self.claim_id = claim_dict["id"]
         self.claim_type = claim_dict["type"]
@@ -208,7 +213,9 @@ class WikidataClaim:
         self.mainsnak = WikidataSnak(claim_dict["mainsnak"])
 
     def __str__(self) -> str:
-        return f"WikidataClaim(type={self.claim_type}, rank={self.rank}, mainsnak={self.mainsnak}, qualifiers={self.qualifiers})"
+        return "WikidataClaim(type={}, rank={}, mainsnak={}, qualifiers={})".format(
+            self.claim_type, self.rank, self.mainsnak, self.qualifiers
+        )
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -243,21 +250,22 @@ class WikidataClaimGroup(Sequence):
         self._claims = [WikidataClaim(claim_dict) for claim_dict in claim_list]
 
         property_ids = set([claim.mainsnak.property_id for claim in self._claims])
-        self.property_id: Union[typedefs.PropertyId, None]
+        self.property_id = None  # type: Union[typedefs.PropertyId, None]
         if len(property_ids) == 1:
             self.property_id = property_ids.pop()
         elif len(property_ids) == 0:
             self.property_id = None
         else:
             raise ValueError(
-                "claims in a claim list must all have the same property id "
-                f"but found multiple property ids {property_ids}"
+                "claims in a claim list must all have the same property id but found multiple property ids {}".format(
+                    property_ids
+                )
             )
 
     def _validate_claim_list(self, claim_list: typedefs.ClaimList) -> None:
         """Raise excpetions if claim_list is not valid."""
         if not isinstance(claim_list, list):
-            raise TypeError(f"claim_list must be a list but got {type(claim_list)}.")
+            raise TypeError("claim_list must be a list but got {}.".format(type(claim_list)))
 
     @overload
     def __getitem__(self, indx: int) -> WikidataClaim:
@@ -274,7 +282,9 @@ class WikidataClaimGroup(Sequence):
         return len(self._claims)
 
     def __str__(self) -> str:
-        return f"WikidataClaimGroup(property_id={self.property_id}, claims={self._claims})"
+        return "WikidataClaimGroup(property_id={}, claims={})".format(
+            self.property_id, self._claims
+        )
 
     def __repr__(self) -> str:
         return self.__str__()

@@ -17,7 +17,7 @@ NO = typedefs.LanguageCode("not a language")
 
 def _load_item_dict(item_id: typedefs.ItemId) -> typedefs.ItemDict:
     """Return an item dictionary."""
-    fpath = os.path.join(PATH_TO_TEST_DATA, f"wd_{item_id}.json")
+    fpath = os.path.join(PATH_TO_TEST_DATA, "wd_{}.json".format(item_id))
     with open(fpath, "r") as fp:
         item_dict = json.load(fp)
     return item_dict
@@ -25,7 +25,7 @@ def _load_item_dict(item_id: typedefs.ItemId) -> typedefs.ItemDict:
 
 def _load_property_dict(property_id: typedefs.PropertyId) -> typedefs.PropertyDict:
     """Return n property dictionary."""
-    fpath = os.path.join(PATH_TO_TEST_DATA, f"wd_{property_id}.json")
+    fpath = os.path.join(PATH_TO_TEST_DATA, "wd_{}.json".format(property_id))
     with open(fpath, "r") as fp:
         property_dict = json.load(fp)
     return property_dict
@@ -33,7 +33,7 @@ def _load_property_dict(property_id: typedefs.PropertyId) -> typedefs.PropertyDi
 
 def _load_lexeme_dict(lexeme_id: typedefs.LexemeId) -> typedefs.LexemeDict:
     """Return an lexeme dictionary."""
-    fpath = os.path.join(PATH_TO_TEST_DATA, f"wd_{lexeme_id}.json")
+    fpath = os.path.join(PATH_TO_TEST_DATA, "wd_{}.json".format(lexeme_id))
     with open(fpath, "r") as fp:
         lexeme_dict = json.load(fp)
     return lexeme_dict

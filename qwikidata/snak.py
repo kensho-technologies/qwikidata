@@ -63,23 +63,25 @@ class WikidataSnak:
         for req_key in _REQUIRED_KEYS:
             if req_key not in snak_dict:
                 raise ValueError(
-                    f"required snak_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(snak_dict.keys())}"
+                    "required snak_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(snak_dict.keys())
+                    )
                 )
         self.snaktype = snak_dict["snaktype"]
         self.property_id = snak_dict["property"]
 
-        self.snak_datatype: Union[str, None]
-        self.value_datatype: Union[str, None]
-        self.datavalue: Union[WikidataDatavalue, None]
+        self.snak_datatype = None  # type: Union[str, None]
+        self.value_datatype = None  # type: Union[str, None]
+        self.datavalue = None  # type: Union[WikidataDatavalue, None]
 
         if self.snaktype == "value":
             _REQUIRED_KEYS = ["datavalue", "datatype"]
             for req_key in _REQUIRED_KEYS:
                 if req_key not in snak_dict:
                     raise ValueError(
-                        f"required snak_dict keys are {_REQUIRED_KEYS}. "
-                        f"only found {list(snak_dict.keys())}"
+                        "required snak_dict keys are {} but only found {}".format(
+                            _REQUIRED_KEYS, list(snak_dict.keys())
+                        )
                     )
             self.snak_datatype = snak_dict["datatype"]
             self.value_datatype = str(snak_dict["datavalue"]["type"])
@@ -92,15 +94,22 @@ class WikidataSnak:
 
         else:
             raise ValueError(
-                f'snaktype must be one of ["value", "somevalue", "novalue"] '
-                f"but got {self.snaktype}"
+                'snaktype must be one of ["value", "somevalue", "novalue"] but got {}'.format(
+                    self.snaktype
+                )
             )
 
     def __str__(self) -> str:
         return (
-            f"WikidataSnak(snaktype={self.snaktype}, property_id={self.property_id}, "
-            f"snak_datatype={self.snak_datatype}, value_datatype={self.value_datatype}, "
-            f"datavalue={self.datavalue})"
+            "WikidataSnak(snaktype={}, property_id={}, "
+            "snak_datatype={}, value_datatype={}, "
+            "datavalue={})".format(
+                self.snaktype,
+                self.property_id,
+                self.snak_datatype,
+                self.value_datatype,
+                self.datavalue,
+            )
         )
 
     def __repr__(self) -> str:
