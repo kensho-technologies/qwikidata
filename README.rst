@@ -25,7 +25,7 @@ Quick Install
 Requirements
 ------------
 
-* python >= 3.6
+* python >= 3.5
 
 Install with pip
 ----------------
