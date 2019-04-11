@@ -56,23 +56,27 @@ def get_entity_dict_from_api(
     """
     if not isinstance(entity_id, str):
         raise InvalidEntityId(
-            f'entity_id must be a string (e.g. "Q42") but got entity_id={entity_id}.'
+            'entity_id must be a string (e.g. "Q42") but got entity_id={}.'.format(entity_id)
         )
     if not entity_id[0] in VALID_ENTITY_PREFIXES:
         raise InvalidEntityId(
-            f"entity_id must start with one of {VALID_ENTITY_PREFIXES} but got entity_id={entity_id}."
+            "entity_id must start with one of {} but got entity_id={}.".format(
+                VALID_ENTITY_PREFIXES, entity_id
+            )
         )
 
-    url = f"{base_url}/{entity_id}.json"
+    url = "{}/{}.json".format(base_url, entity_id)
     response = requests.get(url)
     if response.ok:
         entity_dict_full = response.json()
     else:
         raise LdiResponseNotOk(
-            f"input entity id: {entity_id}, "
-            f"response.headers: {response.headers}, "
-            f"response.status_code: {response.status_code}, "
-            f"response.text: {response.text}"
+            "input entity id: {}, "
+            "response.headers: {}, "
+            "response.status_code: {}, "
+            "response.text: {}".format(
+                entity_id, response.headers, response.status_code, response.text
+            )
         )
 
     # remove redundant top level keys
@@ -81,8 +85,9 @@ def get_entity_dict_from_api(
 
     if entity_id != returned_entity_id:
         logger.warning(
-            f"Wikidata redirect detected.  Input entity id={entity_id}. "
-            f"Returned entity id={returned_entity_id}."
+            "Wikidata redirect detected.  Input entity id={}. Returned entity id={}.".format(
+                entity_id, returned_entity_id
+            )
         )
 
     return entity_dict

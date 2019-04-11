@@ -80,8 +80,8 @@ class WikidataJsonDump:
         self, out_fbase: str, ichunk: int, out_lines: List[str]
     ) -> Tuple[List[str], int, str]:
         """Write a single chunk to disk."""
-        out_fname = f"{out_fbase}-ichunk_{ichunk}.json"
-        self.logger.debug(f"writing {out_fname}")
+        out_fname = "{}-ichunk_{}.json".format(out_fbase, ichunk)
+        self.logger.debug("writing {}".format(out_fname))
         out_lines = [out_line.rstrip(",\n") for out_line in out_lines]
         with open(out_fname, "w") as fp:
             fp.write("[\n")
@@ -91,11 +91,11 @@ class WikidataJsonDump:
         if self.compression == "bz2":
             args = ["bzip2", out_fname]
             subprocess.check_output(args)
-            out_fname = f"{out_fname}.bz2"
+            out_fname = "{}.bz2".format(out_fname)
         elif self.compression == "gz":
             args = ["gzip", out_fname]
             subprocess.check_output(args)
-            out_fname = f"{out_fname}.gz"
+            out_fname = "{}.gz".format(out_fname)
 
         out_lines = []
         ichunk += 1
@@ -123,8 +123,8 @@ class WikidataJsonDump:
             out_fbase = self.basename
 
         ichunk = 0
-        out_lines: List[str] = []
-        out_fnames: List[str] = []
+        out_lines = []  # type: List[str]
+        out_fnames = []  # type: List[str]
 
         for iline, line in enumerate(wd_dump.iter_lines()):
             if line.strip() in ["[", "]"]:

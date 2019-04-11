@@ -72,12 +72,14 @@ def get_subclasses_of_item(item_id: str, return_qids: bool = True) -> Union[List
          {'WDid': {'type': 'uri',
            'value': 'http://www.wikidata.org/entity/Q15895923'}}]}}
     """
-    query_string = f"""
+    query_string = """
     SELECT $WDid
     WHERE {{
-      ?WDid (wdt:P279)* wd:{item_id} .
+      ?WDid (wdt:P279)* wd:{} .
     }}
-    """
+    """.format(
+        item_id
+    )
     results = return_sparql_query_results(query_string)
     if return_qids:
         uris = [binding["WDid"]["value"] for binding in results["results"]["bindings"]]

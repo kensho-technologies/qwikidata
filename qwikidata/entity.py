@@ -23,12 +23,15 @@ class EntityMixin:
         """Raise excpetions if entity_dict is not valid."""
         _REQUIRED_KEYS = ["id", "type"]
         if not isinstance(entity_dict, dict):
-            raise TypeError(f"entity_dict must be a dictionary but got {type(entity_dict)}.")
+            raise TypeError(
+                "entity_dict must be a dictionary but got {}.".format(type(entity_dict))
+            )
         for req_key in _REQUIRED_KEYS:
             if req_key not in entity_dict:
                 raise ValueError(
-                    f"required entity_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(entity_dict.keys())}"
+                    "required entity_dict keys are {} but only found {}.".format(
+                        _REQUIRED_KEYS, list(entity_dict.keys())
+                    )
                 )
 
 
@@ -42,7 +45,7 @@ class LabelDescriptionAliasMixin:
 
     """
 
-    _entity_dict: typedefs.EntityDict
+    _entity_dict = None  # type: typedefs.EntityDict
 
     @staticmethod
     def _validate_label_desc_alias_dict(
@@ -53,8 +56,9 @@ class LabelDescriptionAliasMixin:
         for req_key in _REQUIRED_KEYS:
             if req_key not in label_desc_alias_dict:
                 raise ValueError(
-                    f"required label_desc_alias_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(label_desc_alias_dict.keys())}"
+                    "required label_desc_alias_dict keys are {} but only found {}.".format(
+                        _REQUIRED_KEYS, list(label_desc_alias_dict.keys())
+                    )
                 )
 
     def get_label(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
@@ -120,7 +124,7 @@ class ClaimsMixin:
         * :py:class:`WikidataSense`
     """
 
-    _entity_dict: typedefs.EntityDict
+    _entity_dict = None  # type: typedefs.EntityDict
 
     @staticmethod
     def _validate_claim_dict(claim_dict: typedefs.EntityDict) -> None:
@@ -129,8 +133,9 @@ class ClaimsMixin:
         for req_key in _REQUIRED_KEYS:
             if req_key not in claim_dict:
                 raise ValueError(
-                    f"required claim_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(claim_dict.keys())}"
+                    "required claim_dict keys are {}. but only found {}".format(
+                        _REQUIRED_KEYS, list(claim_dict.keys())
+                    )
                 )
 
     def get_claim_groups(self) -> Dict[typedefs.PropertyId, WikidataClaimGroup]:
@@ -257,7 +262,9 @@ class WikidataItem(LabelDescriptionAliasMixin, ClaimsMixin, EntityMixin):
         """Raise excpetions if item_dict is not valid."""
         self._validate_entity_dict(item_dict)
         if item_dict["type"] != "item":
-            raise ValueError(f"item_dict['type'] must be 'item' but found '{item_dict['type']}'")
+            raise ValueError(
+                "item_dict['type'] must be 'item' but found '{}'".format(item_dict["type"])
+            )
         self._validate_label_desc_alias_dict(item_dict)
         self._validate_claim_dict(item_dict)
 
@@ -341,7 +348,9 @@ class WikidataProperty(LabelDescriptionAliasMixin, ClaimsMixin, EntityMixin):
         self._validate_entity_dict(property_dict)
         if property_dict["type"] != "property":
             raise ValueError(
-                f"property_dict['type'] must be 'property' but found '{property_dict['type']}'"
+                "property_dict['type'] must be 'property' but found '{}'".format(
+                    property_dict["type"]
+                )
             )
         self._validate_label_desc_alias_dict(property_dict)
         self._validate_claim_dict(property_dict)
@@ -395,8 +404,9 @@ class WikidataForm(ClaimsMixin):
         for req_key in _REQUIRED_KEYS:
             if req_key not in form_dict:
                 raise ValueError(
-                    f"required form_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(form_dict.keys())}"
+                    "required form_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(form_dict.keys())
+                    )
                 )
 
     def get_representation(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
@@ -418,7 +428,9 @@ class WikidataForm(ClaimsMixin):
             return ""
 
     def __str__(self) -> str:
-        return f"WikidataForm(form_id={self.form_id}, representation={self.get_representation()}, grammatical_features={self.grammatical_features})"
+        return "WikidataForm(form_id={}, representation={}, grammatical_features={})".format(
+            self.form_id, self.get_representation(), self.grammatical_features
+        )
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -461,8 +473,9 @@ class WikidataSense(ClaimsMixin):
         for req_key in _REQUIRED_KEYS:
             if req_key not in sense_dict:
                 raise ValueError(
-                    f"required sense_dict keys are {_REQUIRED_KEYS}. "
-                    f"only found {list(sense_dict.keys())}"
+                    "required sense_dict keys are {} but only found {}".format(
+                        _REQUIRED_KEYS, list(sense_dict.keys())
+                    )
                 )
 
     def get_gloss(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:
@@ -481,7 +494,7 @@ class WikidataSense(ClaimsMixin):
             return ""
 
     def __str__(self) -> str:
-        return f"WikidataSense(sense_id={self.sense_id}, gloss={self.get_gloss()})"
+        return "WikidataSense(sense_id={}, gloss={})".format(self.sense_id, self.get_gloss())
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -516,7 +529,7 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
 
     def __init__(self, lexeme_dict: typedefs.LexemeDict) -> None:
         self._validate_lexeme_dict(lexeme_dict)
-        self._entity_dict: typedefs.LexemeDict = lexeme_dict
+        self._entity_dict = lexeme_dict  # type: typedefs.LexemeDict
         self.entity_id = lexeme_dict["id"]
         self.entity_type = lexeme_dict["type"]
         self.language = lexeme_dict["language"]
@@ -527,7 +540,7 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
         self._validate_entity_dict(lexeme_dict)
         if lexeme_dict["type"] != "lexeme":
             raise ValueError(
-                f"lexeme_dict['type'] must be 'lexeme' but found '{lexeme_dict['type']}'"
+                "lexeme_dict['type'] must be 'lexeme' but found '{}'".format(lexeme_dict["type"])
             )
         self._validate_claim_dict(lexeme_dict)
 
@@ -536,8 +549,9 @@ class WikidataLexeme(ClaimsMixin, EntityMixin):
         for req_key in _REQUIRED_KEYS:
             if req_key not in lexeme_dict:
                 raise ValueError(
-                    f"required lexeme_dict keys are  {_REQUIRED_KEYS}. "
-                    f"only found {list(lexeme_dict.keys())}"
+                    "required lexeme_dict keys are  {} but only found {}".format(
+                        _REQUIRED_KEYS, list(lexeme_dict.keys())
+                    )
                 )
 
     def get_lemma(self, lang: typedefs.LanguageCode = typedefs.LanguageCode("en")) -> str:

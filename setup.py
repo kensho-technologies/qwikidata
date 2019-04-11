@@ -54,7 +54,14 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     install_requires=["mypy-extensions", "requests"],
     extras_require={
-        "dev": ["pre-commit", "pytest", "pytest-cov", "sphinx", "sphinx_rtd_theme", "sphinx_autodoc_typehints"]
+        "dev": [
+            "pre-commit",
+            "pytest",
+            "pytest-cov",
+            "sphinx",
+            "sphinx_rtd_theme",
+            "sphinx_autodoc_typehints",
+        ]
     },
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -62,9 +69,10 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
     keywords="wikidata parser open data",
-    python_requires=">=3.6",
+    python_requires=">=3.5",
 )
