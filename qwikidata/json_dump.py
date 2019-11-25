@@ -29,7 +29,7 @@ class WikidataJsonDump:
         if not isinstance(filename, str):
             raise ValueError("filename must be a string")
 
-        if filename.endswith(".json"):
+        if filename.endswith((".json", ".jsonl", ".ndjson")):
             self.basename, _ = os.path.splitext(filename)
             self.compression = None
         elif filename.endswith(".json.bz2"):
@@ -39,7 +39,7 @@ class WikidataJsonDump:
             self.basename, _ = os.path.splitext(os.path.splitext(filename)[0])
             self.compression = "gz"
         else:
-            raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json"')
+            raise ValueError('filename must end with ".json.bz2" or ".json.gz" or ".json" or ".jsonl" or ".ndjson"')
 
         self.filename = filename
         self.logger = logging.getLogger(__name__)
