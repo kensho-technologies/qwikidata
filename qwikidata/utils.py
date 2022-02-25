@@ -26,10 +26,13 @@ def dump_entities_to_json(entities: Iterable[WikidataEntity], out_fname: str) ->
       Output file name
     """
     with open(out_fname, "w") as fp:
-        fp.write("[\n")
-        for ent_lo, ent_hi in pairwise(entities):
-            ent_str = json.dumps(ent_lo._entity_dict)
-            fp.write("{},\n".format(ent_str))
-        ent_str = json.dumps(ent_hi._entity_dict)
-        fp.write("{}".format(ent_str))
+        fp.write("[")
+
+        ent = next(entities, None)
+        while ent:
+            ent_str = json.dumps(ent._entity_dict)
+            fp.write("\n{}".format(ent_str))
+            ent = next(entities, None)
+            if ent: fp.write(",")
+
         fp.write("\n]")
