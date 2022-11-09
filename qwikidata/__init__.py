@@ -3,3 +3,4 @@
 
 __package_name__ = "qwikidata"
 __version__ = "0.4.2"
+
