@@ -7,6 +7,10 @@ import requests
 WIKIDATA_SPARQL_URL = "https://query.wikidata.org/sparql"
 
 
+class SPARQLResponseNotOk(Exception):
+    pass
+
+
 def return_sparql_query_results(
     query_string: str, wikidata_sparql_url: str = WIKIDATA_SPARQL_URL
 ) -> Dict:
@@ -19,9 +23,17 @@ def return_sparql_query_results(
     wikidata_sparql_url: str, optional
       wikidata SPARQL endpoint to use
     """
-    return requests.get(
+    resp = requests.get(
         wikidata_sparql_url, params={"query": query_string, "format": "json"}
-    ).json()
+    )
+    if resp.status_code != 200:
+        raise SPARQLResponseNotOk(
+            "The wikidata SPARQL endpoint returned an error.\n"
+            "Status code: {}\n"
+            "Response: {}".format(resp.status_code, resp.text)
+        )
+
+    return resp.json()
 
 
 def get_subclasses_of_item(item_id: str, return_qids: bool = True) -> Union[List[str], Dict]:
